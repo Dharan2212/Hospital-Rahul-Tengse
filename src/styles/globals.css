@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-teal: #078C8C;
+  --color-green: #22A06B;
+  --color-navy: #063B5C;
+  --color-blue: #0B5CAD;
+  --color-sky: #EAFBFF;
+  --color-white: #FFFFFF;
+  --color-red: #DC2626;
+  --color-gold: #D97706;
+  --color-purple: #7C3AED;
+  --color-text: #374151;
+  --color-muted: #64748B;
+  --color-border: #CBD5E1;
+  --color-bg-alt: #F8FAFC;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
+  --space-3xl: 120px;
+
+  --radius-card: 20px;
+  --radius-btn: 10px;
+  --radius-lg: 28px;
+  --max-width: 1200px;
+  --shadow-card: 0 2px 16px rgba(7, 140, 140, 0.09);
+  --shadow-hover: 0 8px 32px rgba(7, 140, 140, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  z-index: 9999;
+  transform: translateY(-160%);
+  border-radius: var(--radius-btn);
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 10px 14px;
+  font-weight: 700;
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.motion-gpu-safe {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
+  flex: 1;
+}
+
+.placeholder-page {
+  min-height: 56vh;
+}
+
+.hero-blob {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+  opacity: 0.65;
+  filter: blur(48px);
+}
+
+.hero-blob-one {
+  width: 18rem;
+  height: 18rem;
+  left: -7rem;
+  top: 7rem;
+  background: rgba(7, 140, 140, 0.16);
+}
+
+.hero-blob-two {
+  width: 22rem;
+  height: 22rem;
+  right: -9rem;
+  bottom: -8rem;
+  background: rgba(34, 160, 107, 0.14);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-blob {
+    animation: hero-blob-float 9s ease-in-out infinite;
+  }
+
+  .hero-blob-two {
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes hero-blob-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+.pattern-soft-grid {
+  background-image:
+    linear-gradient(rgba(7, 140, 140, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 140, 140, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.approval-placeholder-grid {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(7, 140, 140, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 30%, rgba(34, 160, 107, 0.12), transparent 26%),
+    linear-gradient(135deg, var(--color-white), var(--color-bg-alt));
+}
+
+/* Batch 6.1 form helpers */
+input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Phase 7 motion polish helpers */
+.motion-safe-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .motion-safe-layer,
+  .motion-gpu-safe {
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  [data-motion-reduce='true'] {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}

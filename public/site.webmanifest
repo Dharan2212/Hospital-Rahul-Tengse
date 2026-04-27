@@ -1,0 +1,9 @@
+{
+  "name": "Dr. Rahul Tengse — Kidney Specialist Website",
+  "short_name": "Dr. Rahul Tengse",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#078C8C",
+  "background_color": "#FFFFFF",
+  "icons": []
+}
