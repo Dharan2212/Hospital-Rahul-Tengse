@@ -8,7 +8,11 @@ The locked project reference is `Dr. Rahul Tengse — Kidney Specialist Website 
 
 ## Current batch status
 
-Completed through: **Phase 7 — Batch 7.1: Animation Polish**
+Completed through: **Phase 9 — Batch 9.1 Responsive QA + Compliance Review**
+
+Per-page SEO metadata, OG/Twitter tags, canonical URLs, Schema JSON-LD, sitemap/robots, and WCAG accessibility pass are implemented.
+
+Phase 9 responsive QA and compliance cleanup applied final source-level fixes for navigation breakpoints, mobile drawer sizing, contact placeholder safety, appointment wording, and narrow-screen wrapping. Final command-based build/lint rerun and ZIP packaging must be completed when command execution is available.
 
 Phase 1 asset-preparation outputs are preserved. Images remain pending client approval and must not be imported into frontend pages until approved and optimized.
 
@@ -77,6 +81,10 @@ Batch 6.1 implements the appointment wizard UI, React Hook Form state management
 Batch 6.2 completes the frontend appointment submission flow. The form now generates the locked WhatsApp appointment request message, opens WhatsApp only when a confirmed `VITE_WHATSAPP_NUMBER` is configured, and shows a safe thank-you/fallback state without instant-confirmation claims.
 
 Batch 7.1 completes animation polish across hero, cards, drawer, modal, FAQ, CTA pulse, media/gallery hover states, and appointment transitions with centralized motion utilities and reduced-motion support.
+
+Phase 8 Batch 8.1 implements the SEO and accessibility foundation: central metadata utilities, React Helmet Async page metadata, safe Schema.org JSON-LD, robots/sitemap updates, NotFound noindex, focus/keyboard improvements, and SEO/accessibility documentation.
+
+Phase 9 Batch 9.1 completes the source-level responsive QA and compliance cleanup pass, including small breakpoint, drawer, wrapping, placeholder-safety, and appointment wording fixes. Final browser/command verification is pending because local command execution was blocked during the handoff run.
 
 ## Notes
 

@@ -1,7 +1,13 @@
 export function isConfirmedValue(value) {
   if (!value || typeof value !== 'string') return false;
-  const normalized = value.trim();
-  return Boolean(normalized) && !normalized.includes('[CLIENT CONFIRMATION REQUIRED]');
+  const normalized = value.trim().toLowerCase();
+  return (
+    Boolean(normalized) &&
+    !normalized.includes('[client confirmation required]') &&
+    !normalized.includes('[client to confirm]') &&
+    !normalized.includes('pending client confirmation') &&
+    !normalized.includes('confirm full address')
+  );
 }
 
 export function getTelHref(phone) {

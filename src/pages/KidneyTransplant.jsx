@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
 import { transplantData } from '../data/transplantData.js';
-import { AnimatedCard, Container, CTASection, Disclaimer, IconList, InfoCard, PageHero, SectionHeader } from '../components/common';
+import { AnimatedCard, Container, CTASection, Disclaimer, IconList, InfoCard, PageHero, SEO, SectionHeader } from '../components/common';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function KidneyTransplant() {
+  const pageSeo = getSeoByPath('/kidney-transplant-guidance');
+
   return (
     <>
+      <SEO path="/kidney-transplant-guidance" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow={transplantData.hero.eyebrow}
         title={transplantData.hero.title}

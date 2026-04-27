@@ -1,10 +1,16 @@
 import { AppointmentForm } from '../components/appointment/index.js';
-import { Container, Disclaimer, PageHero } from '../components/common/index.js';
+import { Container, Disclaimer, PageHero, SEO } from '../components/common/index.js';
 import { appointmentDisclaimer, emergencyDisclaimer } from '../data/appointmentData.js';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function Appointment() {
+  const pageSeo = getSeoByPath('/appointment');
+
   return (
     <>
+      <SEO path="/appointment" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow="Appointment Request"
         title="Book Appointment"

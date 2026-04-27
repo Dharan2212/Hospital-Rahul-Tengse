@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /appointment?submitted=true
+Disallow: /appointment/thank-you
+
+Sitemap: https://example.com/sitemap.xml

@@ -49,7 +49,7 @@ export const preferredTimeOptions = [
 ];
 
 export const appointmentDisclaimer =
-  "Submitting an appointment request does not guarantee a confirmed appointment time. The hospital or doctor's team will contact the patient for confirmation.";
+  "Submitting an appointment request does not guarantee a final appointment time. The hospital or doctor's team will contact the patient for scheduling confirmation.";
 
 export const emergencyDisclaimer =
   'For life-threatening emergencies, call the hospital directly or visit the nearest emergency facility immediately.';

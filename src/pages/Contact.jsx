@@ -1,7 +1,9 @@
 import { Instagram, Mail, MapPin, MessageCircle, Phone, Clock } from 'lucide-react';
-import { AnimatedCard, Button, Container, CTASection, Disclaimer, PageHero, PlaceholderVisual, SectionHeader } from '../components/common';
+import { AnimatedCard, Button, Container, CTASection, Disclaimer, PageHero, PlaceholderVisual, SEO, SectionHeader } from '../components/common';
 import { siteData } from '../data/siteData.js';
 import { getExternalHref, getTelHref, getWhatsAppHref, isConfirmedValue } from '../utils/contactLinks.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function ContactCard({ icon: Icon, title, value, action }) {
   return (
@@ -10,7 +12,7 @@ function ContactCard({ icon: Icon, title, value, action }) {
         <Icon aria-hidden="true" className="h-6 w-6" />
       </span>
       <h2 className="mt-5 font-heading text-xl font-bold text-navy">{title}</h2>
-      <p className="mt-3 text-sm leading-6 text-muted">{value}</p>
+      <p className="mt-3 whitespace-pre-line break-words text-sm leading-6 text-muted">{value}</p>
       {action}
     </AnimatedCard>
   );
@@ -24,9 +26,11 @@ function Contact() {
   const emergencyConfirmed = isConfirmedValue(siteData.contact.emergencyPhone);
   const whatsappConfirmed = isConfirmedValue(siteData.contact.whatsappNumber);
   const mapConfirmed = isConfirmedValue(siteData.hospital.mapUrl);
+  const pageSeo = getSeoByPath('/contact');
 
   return (
     <>
+      <SEO path="/contact" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow="Contact"
         title="Contact Us"
@@ -53,7 +57,7 @@ function Contact() {
             <ContactCard
               icon={MapPin}
               title="Address"
-              value={`${siteData.hospital.name}, ${siteData.hospital.city}, ${siteData.hospital.state} [CONFIRM FULL ADDRESS]`}
+              value={`${siteData.hospital.name}, ${siteData.hospital.city}, ${siteData.hospital.state}. Full address pending client confirmation.`}
               action={
                 <Button className="mt-5" href={mapHref} variant="outline" disabled={!mapConfirmed} external={mapConfirmed}>
                   View on Map
@@ -63,7 +67,7 @@ function Contact() {
             <ContactCard
               icon={Clock}
               title="OPD Timing"
-              value={siteData.hospital.opdTiming || '[CLIENT CONFIRMATION REQUIRED]'}
+              value={siteData.hospital.opdTiming || 'OPD timing pending client confirmation'}
               action={<p className="mt-5 text-sm font-semibold text-muted">Confirm timing before launch</p>}
             />
           </div>

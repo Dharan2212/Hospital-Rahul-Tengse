@@ -1,10 +1,16 @@
 import { galleryData } from '../data/galleryData.js';
-import { Container, CTASection, Disclaimer, PageHero, SectionHeader } from '../components/common';
+import { Container, CTASection, Disclaimer, PageHero, SEO, SectionHeader } from '../components/common';
 import { GalleryGrid } from '../components/gallery/GalleryGrid.jsx';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function Gallery() {
+  const pageSeo = getSeoByPath('/gallery');
+
   return (
     <>
+      <SEO path="/gallery" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow="Gallery"
         title="Photo Gallery"

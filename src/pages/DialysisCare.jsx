@@ -1,9 +1,15 @@
 import { dialysisData } from '../data/dialysisData.js';
-import { AnimatedCard, Container, CTASection, Disclaimer, IconList, InfoCard, MotionReveal, PageHero, PlaceholderVisual, SectionHeader } from '../components/common';
+import { AnimatedCard, Container, CTASection, Disclaimer, IconList, InfoCard, MotionReveal, PageHero, PlaceholderVisual, SEO, SectionHeader } from '../components/common';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function DialysisCare() {
+  const pageSeo = getSeoByPath('/dialysis-care');
+
   return (
     <>
+      <SEO path="/dialysis-care" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow={dialysisData.hero.eyebrow}
         title={dialysisData.hero.title}
@@ -81,7 +87,7 @@ function DialysisCare() {
         heading={dialysisData.cta.heading}
         description={dialysisData.cta.description}
         primaryCTA={dialysisData.cta.primaryCTA}
-        disclaimer="Submitting an appointment request does not guarantee a confirmed appointment time."
+        disclaimer="Submitting an appointment request does not guarantee a final appointment time."
         background="gradient"
       />
     </>

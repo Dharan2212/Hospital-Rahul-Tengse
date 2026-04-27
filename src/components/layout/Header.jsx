@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Calendar, Menu, Phone } from 'lucide-react';
 import { siteData } from '../../data/siteData.js';
@@ -10,6 +10,7 @@ function Header() {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
   const phoneConfirmed = isConfirmedValue(siteData.contact.primaryPhone);
   const callHref = useMemo(() => getTelHref(siteData.contact.primaryPhone), []);
 
@@ -23,6 +24,13 @@ function Header() {
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location.pathname]);
+
+  function closeMenu({ restoreFocus = false } = {}) {
+    setIsMenuOpen(false);
+    if (restoreFocus) {
+      window.setTimeout(() => menuButtonRef.current?.focus(), 0);
+    }
+  }
 
   return (
     <header
@@ -43,7 +51,7 @@ function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-1 xl:flex" aria-label="Primary navigation">
           {navigationLinks.map((item) => (
             <NavLink
               key={item.href}
@@ -61,7 +69,7 @@ function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <a
             href={callHref}
             className={`inline-flex min-h-11 items-center gap-2 rounded-btn border px-4 text-sm font-semibold transition-colors ${
@@ -71,6 +79,7 @@ function Header() {
             }`}
             aria-disabled={!phoneConfirmed}
             title={!phoneConfirmed ? 'Phone number pending client confirmation' : 'Call now'}
+            tabIndex={phoneConfirmed ? undefined : -1}
           >
             <Phone size={17} aria-hidden="true" />
             {siteData.cta.callNow.label}
@@ -85,8 +94,9 @@ function Header() {
         </div>
 
         <button
+          ref={menuButtonRef}
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-btn border border-border text-navy transition-colors hover:bg-sky hover:text-teal lg:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-btn border border-border text-navy transition-colors hover:bg-sky hover:text-teal xl:hidden"
           aria-label="Open navigation menu"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
@@ -98,7 +108,7 @@ function Header() {
 
       <MobileMenu
         isOpen={isMenuOpen}
-        onClose={() => setIsMenuOpen(false)}
+        onClose={() => closeMenu({ restoreFocus: true })}
         callHref={callHref}
         phoneConfirmed={phoneConfirmed}
       />

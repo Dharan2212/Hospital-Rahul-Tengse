@@ -11,7 +11,7 @@ export const aboutData = {
   intro: {
     name: siteData.doctor.name,
     title: siteData.doctor.subtitle,
-    qualification: 'MBBS, MD Medicine, DM Nephrology [CLIENT TO CONFIRM]',
+    qualification: 'Qualification details pending client confirmation',
     paragraphs: [
       'Dr. Rahul Tengse provides specialized nephrology consultation for patients and families seeking guidance for kidney health concerns, abnormal reports, and ongoing kidney disease follow-up.',
       'His consultation areas include kidney disease evaluation, dialysis care guidance, diabetic kidney disease, blood pressure-related kidney problems, kidney transplant guidance, and report review.',

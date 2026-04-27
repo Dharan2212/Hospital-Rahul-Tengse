@@ -1,10 +1,16 @@
-import { CTASection, Container, Disclaimer, PageHero, SectionHeader } from '../components/common';
+import { CTASection, Container, Disclaimer, PageHero, SEO, SectionHeader } from '../components/common';
 import { ServiceCard } from '../components/services/ServiceCard.jsx';
 import { servicesData } from '../data/servicesData.js';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function Services() {
+  const pageSeo = getSeoByPath('/services');
+
   return (
     <>
+      <SEO path="/services" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow="Kidney care services"
         title="Kidney Care Services"

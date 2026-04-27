@@ -28,6 +28,7 @@ export function Step1Type({ selectedType, onSelect, error, onNext }) {
                 key={type.id}
                 className={cx(
                   'cursor-pointer rounded-card border bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-card',
+                  'focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-teal',
                   checked ? 'border-teal ring-2 ring-teal/20' : 'border-border hover:border-teal/50'
                 )}
               >

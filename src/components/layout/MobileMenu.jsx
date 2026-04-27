@@ -41,7 +41,7 @@ function MobileMenu({ isOpen, onClose, callHref, phoneConfirmed }) {
   return (
     <AnimatePresence>
       {isOpen ? (
-        <div className="fixed inset-0 z-[60] lg:hidden" id="mobile-navigation">
+        <div className="fixed inset-0 z-[60] xl:hidden" id="mobile-navigation">
           <motion.button
             type="button"
             className="absolute inset-0 cursor-default bg-black/40"
@@ -53,7 +53,7 @@ function MobileMenu({ isOpen, onClose, callHref, phoneConfirmed }) {
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation menu"
-            className="absolute right-0 top-0 flex h-full w-[min(88vw,360px)] flex-col overflow-y-auto bg-white p-6 shadow-hover"
+            className="absolute right-0 top-0 flex h-dvh max-h-dvh w-[min(88vw,360px)] flex-col overflow-y-auto bg-white p-5 shadow-hover sm:p-6"
             {...drawerPanelMotion(shouldReduceMotion)}
           >
             <div className="mb-6 flex items-center justify-between gap-4">
@@ -103,6 +103,7 @@ function MobileMenu({ isOpen, onClose, callHref, phoneConfirmed }) {
                 }`}
                 aria-disabled={!phoneConfirmed}
                 title={!phoneConfirmed ? 'Phone number pending client confirmation' : 'Call now'}
+                tabIndex={phoneConfirmed ? undefined : -1}
               >
                 <Phone size={17} aria-hidden="true" />
                 {siteData.cta.callNow.label}

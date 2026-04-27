@@ -27,7 +27,7 @@ export function GalleryPreview() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {approvedItems.map((item) => (
               <MotionReveal key={item.id} className="overflow-hidden rounded-card border border-border bg-bgAlt shadow-card">
-                <img src={item.thumbnail} alt={item.caption || item.title} className="aspect-square w-full object-cover" />
+                <img src={item.thumbnail} alt={item.alt || item.caption || item.title} className="aspect-square w-full object-cover" />
               </MotionReveal>
             ))}
           </div>

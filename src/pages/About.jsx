@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom';
 import { aboutData } from '../data/aboutData.js';
 import { imageManifest } from '../data/imageManifest.js';
-import { AnimatedCard, Container, CTASection, Disclaimer, InfoCard, MotionReveal, PageHero, PlaceholderVisual, SectionHeader } from '../components/common';
+import { AnimatedCard, Container, CTASection, Disclaimer, InfoCard, MotionReveal, PageHero, PlaceholderVisual, SEO, SectionHeader } from '../components/common';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function About() {
   const doctorImage = imageManifest.doctor?.profile;
   const canUseDoctorImage = doctorImage?.frontendUseAllowed === true && doctorImage?.src;
+  const pageSeo = getSeoByPath('/about');
 
   return (
     <>
+      <SEO path="/about" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow={aboutData.hero.eyebrow}
         title={aboutData.hero.title}

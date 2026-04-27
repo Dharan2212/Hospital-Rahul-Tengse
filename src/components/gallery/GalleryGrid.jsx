@@ -40,7 +40,7 @@ export function GalleryGrid({ images = [] }) {
 
   return (
     <div>
-      <div className="flex gap-2 overflow-x-auto pb-2" role="tablist" aria-label="Gallery categories">
+      <div className="flex gap-2 overflow-x-auto pb-2" aria-label="Gallery categories">
         {categories.map((category) => (
           <button
             key={category}
@@ -50,8 +50,7 @@ export function GalleryGrid({ images = [] }) {
                 ? 'border-teal bg-teal text-white'
                 : 'border-border bg-white text-navy hover:bg-sky hover:text-teal'
             }`}
-            aria-selected={activeCategory === category}
-            role="tab"
+            aria-pressed={activeCategory === category}
             onClick={() => setActiveCategory(category)}
           >
             {category}
@@ -87,7 +86,7 @@ export function GalleryGrid({ images = [] }) {
           ))}
         </div>
       ) : (
-        <div className="mt-8 rounded-card border border-dashed border-border bg-white p-8 text-center shadow-card">
+        <div className="mt-8 rounded-card border border-dashed border-border bg-white p-8 text-center shadow-card" role="status">
           <span className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-sky text-teal">
             <Images aria-hidden="true" className="h-7 w-7" />
           </span>

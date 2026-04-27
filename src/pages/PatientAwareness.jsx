@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
 import { awarenessData } from '../data/awarenessData.js';
-import { AnimatedCard, Container, CTASection, Disclaimer, IconList, InfoCard, PageHero, SectionHeader } from '../components/common';
+import { AnimatedCard, Container, CTASection, Disclaimer, IconList, InfoCard, PageHero, SEO, SectionHeader } from '../components/common';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function PatientAwareness() {
+  const pageSeo = getSeoByPath('/patient-awareness');
+
   return (
     <>
+      <SEO path="/patient-awareness" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow={awarenessData.hero.eyebrow}
         title={awarenessData.hero.title}

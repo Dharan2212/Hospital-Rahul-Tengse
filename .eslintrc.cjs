@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  ignorePatterns: ['dist/', 'node_modules/'],
   env: {
     browser: true,
     es2022: true,
@@ -28,4 +29,13 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
   },
+  overrides: [
+    {
+      files: ['*.config.js', '*.config.cjs', 'scripts/**/*.js'],
+      env: {
+        node: true,
+        browser: false,
+      },
+    },
+  ],
 };

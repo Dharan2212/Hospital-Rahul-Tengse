@@ -1,7 +1,11 @@
 const indianMobileRegex = /^[6-9]\d{9}$/;
 
 function isPlaceholderValue(value) {
-  return typeof value === 'string' && value.includes('[CLIENT CONFIRMATION REQUIRED]');
+  return (
+    typeof value === 'string' &&
+    (value.includes('[CLIENT CONFIRMATION REQUIRED]') ||
+      value.toLowerCase().includes('pending client confirmation'))
+  );
 }
 
 export function normalizeIndianWhatsAppNumber(number) {

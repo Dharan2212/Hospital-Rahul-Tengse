@@ -1,15 +1,20 @@
 import { useState } from 'react';
 import { mediaData } from '../data/mediaData.js';
-import { Container, CTASection, Disclaimer, PageHero, PlaceholderVisual, SectionHeader } from '../components/common';
+import { Container, CTASection, Disclaimer, PageHero, PlaceholderVisual, SEO, SectionHeader } from '../components/common';
 import { MediaCard, isRenderableMedia } from '../components/media/MediaCard.jsx';
 import { ImageModal } from '../components/gallery/ImageModal.jsx';
+import { siteData } from '../data/siteData.js';
+import { getSeoByPath } from '../utils/seo.js';
+import { getSchemaForPage } from '../utils/schema.js';
 
 function MediaNews() {
   const [selectedMedia, setSelectedMedia] = useState(null);
   const approvedMedia = mediaData.filter(isRenderableMedia);
+  const pageSeo = getSeoByPath('/media-news');
 
   return (
     <>
+      <SEO path="/media-news" schema={getSchemaForPage(pageSeo, siteData)} />
       <PageHero
         eyebrow="Media and news"
         title="Media Coverage & News Recognition"

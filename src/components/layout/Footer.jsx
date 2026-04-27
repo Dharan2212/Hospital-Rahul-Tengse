@@ -76,6 +76,7 @@ function Footer() {
               href={phoneHref}
               className={phoneConfirmed ? 'hover:text-sky' : 'pointer-events-none opacity-70'}
               aria-disabled={!phoneConfirmed}
+              tabIndex={phoneConfirmed ? undefined : -1}
             >
               Phone: {siteData.contact.primaryPhone}
             </a>

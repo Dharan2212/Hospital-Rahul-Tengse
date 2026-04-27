@@ -25,7 +25,7 @@ export function MediaCard({ item, onView }) {
       <div className="aspect-[4/3] overflow-hidden bg-sky">
         <motion.img
           src={item.thumbnail}
-          alt={item.title}
+          alt={item.alt || 'Newspaper coverage of kidney awareness - Dr. Rahul Tengse'}
           className="h-full w-full object-cover"
           loading="lazy"
           whileHover={mediaImageHoverMotion(shouldReduceMotion)}
@@ -46,7 +46,14 @@ export function MediaCard({ item, onView }) {
         </div>
         <h3 className="font-heading text-lg font-bold text-navy">{item.title}</h3>
         <p className="mt-3 text-sm leading-6 text-muted">{item.summary}</p>
-        <Button className="mt-5" variant="outline" size="sm" onClick={() => onView?.(item)} icon={<Eye className="h-4 w-4" />}>
+        <Button
+          className="mt-5"
+          variant="outline"
+          size="sm"
+          onClick={() => onView?.(item)}
+          icon={<Eye className="h-4 w-4" />}
+          ariaLabel={`View media image: ${item.title}`}
+        >
           View Image
         </Button>
       </div>

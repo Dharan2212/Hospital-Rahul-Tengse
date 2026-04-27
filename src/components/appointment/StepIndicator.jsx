@@ -63,7 +63,7 @@ export function StepIndicator({
                   {content}
                 </span>
               )}
-              <span className={cx('mt-2 text-[11px] font-semibold sm:text-xs', isActive ? 'text-teal' : 'text-muted')}>
+              <span className={cx('mt-2 max-w-[72px] break-words text-[10px] font-semibold leading-tight sm:max-w-[92px] sm:text-xs', isActive ? 'text-teal' : 'text-muted')}>
                 {step.label}
               </span>
             </li>

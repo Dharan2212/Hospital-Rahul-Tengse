@@ -12,3 +12,4 @@ export { FAQ } from './FAQ';
 export { PlaceholderVisual } from './PlaceholderVisual';
 export { InfoCard } from './InfoCard';
 export { IconList } from './IconList';
+export { SEO } from './SEO';

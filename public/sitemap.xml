@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://example.com/</loc></url>
-  <url><loc>https://example.com/about</loc></url>
-  <url><loc>https://example.com/services</loc></url>
-  <url><loc>https://example.com/dialysis-care</loc></url>
-  <url><loc>https://example.com/kidney-transplant-guidance</loc></url>
-  <url><loc>https://example.com/patient-awareness</loc></url>
-  <url><loc>https://example.com/media-news</loc></url>
-  <url><loc>https://example.com/gallery</loc></url>
-  <url><loc>https://example.com/appointment</loc></url>
-  <url><loc>https://example.com/contact</loc></url>
+  <url><loc>https://example.com/</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/about</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/services</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/dialysis-care</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/kidney-transplant-guidance</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/patient-awareness</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/media-news</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/gallery</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/appointment</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://example.com/contact</loc><lastmod>2026-04-27</lastmod></url>
 </urlset>

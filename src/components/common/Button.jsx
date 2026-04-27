@@ -58,7 +58,7 @@ export function Button({
           {icon}
         </span>
       )}
-      {children && <span>{children}</span>}
+      {children && <span className="text-center leading-snug">{children}</span>}
       {!loading && icon && iconPosition === 'right' && (
         <span aria-hidden="true" className="inline-flex shrink-0">
           {icon}
@@ -95,6 +95,7 @@ export function Button({
           href={isDisabled ? undefined : href}
           aria-label={ariaLabel}
           aria-disabled={isDisabled ? 'true' : undefined}
+          aria-busy={loading ? 'true' : undefined}
           className={classes}
           onClick={handleClick}
           target={external ? '_blank' : undefined}
@@ -111,6 +112,7 @@ export function Button({
         to={href}
         aria-label={ariaLabel}
         aria-disabled={isDisabled ? 'true' : undefined}
+        aria-busy={loading ? 'true' : undefined}
         className={classes}
         onClick={handleClick}
         tabIndex={isDisabled ? -1 : undefined}
@@ -124,6 +126,7 @@ export function Button({
     <button
       type={type}
       aria-label={ariaLabel}
+      aria-busy={loading ? 'true' : undefined}
       className={classes}
       disabled={isDisabled}
       onClick={handleClick}

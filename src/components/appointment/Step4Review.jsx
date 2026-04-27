@@ -86,6 +86,7 @@ export function Step4Review({ values, onEdit, onBack, onSubmit, isSubmitting = f
           loading={isSubmitting}
           icon={<Send className="h-4 w-4" />}
           iconPosition="right"
+          ariaLabel={isSubmitting ? 'Submitting appointment request' : 'Submit appointment request'}
         >
           Submit Appointment Request
         </Button>
