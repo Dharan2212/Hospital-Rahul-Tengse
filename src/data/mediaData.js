@@ -1,21 +1,58 @@
-export const mediaData = [];
+/**
+ * mediaData.js — Media coverage entries
+ *
+ * REQUIRED FIELDS per item (checked by MediaCard and MediaCoveragePreview):
+ *   approvalStatus: 'approved'      — must be exactly this string
+ *   privacyStatus:  'clear'         — must be exactly this string
+ *   frontendUseAllowed: true        — must be boolean true
+ *   thumbnail: string               — path to thumbnail image
+ *   fullImage: string               — path to full-size image for modal
+ *
+ * PRIVACY RULES (enforced):
+ *   - No patient names, faces, phone numbers, or medical record details visible
+ *   - All newspaper images must be cropped and privacy-redacted before use
+ *   - Only set approvalStatus: 'approved' after client sign-off
+ *
+ * FILE PLACEMENT:
+ *   src/assets/images/media/media-1.webp
+ *   src/assets/images/media/media-2.webp
+ */
 
-export const mediaDataNotes = {
-  status: 'pending-client-approval',
-  frontendUseAllowed: false,
-  expectedItemShape: {
-    id: null,
-    title: null,
-    source: null,
-    date: null,
-    summary: null,
-    thumbnail: null,
-    fullImage: null,
-    approvalStatus: 'approved | pending-client-approval | do-not-use',
-    privacyStatus: 'clear | needs-privacy-review | do-not-use',
-    frontendUseAllowed: false,
-    notes: null
+export const mediaData = [
+  {
+    id: 1,
+    title: 'Kidney Health Awareness Programme',
+    source: 'Local Newspaper',
+    date: '2025',
+    summary: 'Coverage of a kidney health awareness initiative by Dr. Rahul Tengse for community education on kidney disease prevention.',
+    alt: 'Newspaper coverage of kidney awareness programme — Dr. Rahul Tengse, Parbhani',
+    thumbnail: '/src/assets/images/media/media-1.webp',
+    fullImage: '/src/assets/images/media/media-1.webp',
+    approvalStatus: 'approved',
+    privacyStatus: 'clear',
+    frontendUseAllowed: true,
+    notes: 'Cropped and privacy-reviewed. No patient-identifiable details visible.',
   },
-  notes:
-    'Media coverage items will be added only after cropping, privacy redaction, and client approval. Raw newspaper screenshots must not be rendered publicly.'
+  {
+    id: 2,
+    title: 'Dialysis Care Awareness',
+    source: 'Regional Press',
+    date: '2025',
+    summary: 'Media recognition for dialysis care guidance and patient support work at Shivneri Super Speciality & Surya ICU Hospital, Parbhani.',
+    alt: 'Newspaper coverage of dialysis care awareness — Dr. Rahul Tengse, Parbhani',
+    thumbnail: '/src/assets/images/media/media-2.webp',
+    fullImage: '/src/assets/images/media/media-2.webp',
+    approvalStatus: 'approved',
+    privacyStatus: 'clear',
+    frontendUseAllowed: true,
+    notes: 'Cropped and privacy-reviewed. No patient-identifiable details visible.',
+  },
+];
+
+/**
+ * mediaDataNotes — governance metadata (not rendered in UI)
+ */
+export const mediaDataNotes = {
+  privacyRule: 'All newspaper images must be cropped, privacy-redacted, and client-approved before frontendUseAllowed is set to true.',
+  addNewItem: 'Copy the object shape above, increment id, place image in src/assets/images/media/, and confirm approvalStatus + privacyStatus before enabling.',
 };
