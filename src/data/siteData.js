@@ -13,6 +13,7 @@
  * TO CHANGE LOGO FILE: update logoSrc path
  * ─────────────────────────────────────────────────────────────────────────────
  */
+import logo from '../assets/images/logo/logo.png';
 
 export const siteData = {
   doctor: {
@@ -67,7 +68,7 @@ export const siteData = {
   branding: {
     useLogoImage: true,
     initials: 'RT',
-    logoSrc: '/src/assets/images/logo/logo.png',
+    logoSrc: logo,
     logoAlt: 'Dr. Rahul Tengse Kidney Specialist Logo',
     logoWidth: 44,
     logoHeight: 44,

@@ -91,7 +91,7 @@ export const imageUsageMap = {
 export const imageCategoryFolders = {
   'doctor-photo': 'src/assets/images/doctor/',
   'hospital-photo': 'src/assets/images/hospital/',
-  'logo-branding': 'src/assets/images/logo/',
+  'logo-branding': '../assets/images/logo/',
   'media-newspaper': 'src/assets/images/media/',
   'awareness-poster': 'src/assets/images/awareness/',
   'dialysis-graphic': 'src/assets/images/dialysis/',

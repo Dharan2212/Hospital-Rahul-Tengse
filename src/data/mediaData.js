@@ -18,6 +18,9 @@
  *   src/assets/images/media/media-2.webp
  */
 
+import media1 from '../assets/images/media/media-1.webp';
+import media2 from '../assets/images/media/media-2.webp';
+
 export const mediaData = [
   {
     id: 1,
@@ -26,8 +29,8 @@ export const mediaData = [
     date: '2025',
     summary: 'Coverage of a kidney health awareness initiative by Dr. Rahul Tengse for community education on kidney disease prevention.',
     alt: 'Newspaper coverage of kidney awareness programme — Dr. Rahul Tengse, Parbhani',
-    thumbnail: '/src/assets/images/media/media-1.webp',
-    fullImage: '/src/assets/images/media/media-1.webp',
+    thumbnail: media1,
+    fullImage: media1,
     approvalStatus: 'approved',
     privacyStatus: 'clear',
     frontendUseAllowed: true,
@@ -40,8 +43,8 @@ export const mediaData = [
     date: '2025',
     summary: 'Media recognition for dialysis care guidance and patient support work at Shivneri Super Speciality & Surya ICU Hospital, Parbhani.',
     alt: 'Newspaper coverage of dialysis care awareness — Dr. Rahul Tengse, Parbhani',
-    thumbnail: '/src/assets/images/media/media-2.webp',
-    fullImage: '/src/assets/images/media/media-2.webp',
+    thumbnail: media2,
+    fullImage: media2,
     approvalStatus: 'approved',
     privacyStatus: 'clear',
     frontendUseAllowed: true,
