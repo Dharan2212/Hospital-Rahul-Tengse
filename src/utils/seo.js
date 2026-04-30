@@ -30,6 +30,21 @@ export function getDefaultOgImage() {
   return siteSeoConfig.defaultOgImage;
 }
 
+/**
+ * buildAbsoluteOgImageUrl - converts a relative Vite-processed image path
+ * to an absolute URL by prepending VITE_SITE_URL.
+ *
+ * Social media crawlers require absolute URLs for og:image to render previews.
+ * Set VITE_SITE_URL in Netlify environment variables for this to work in production.
+ */
+export function buildAbsoluteOgImageUrl(src) {
+  if (!src) return null;
+  if (/^https?:\/\//i.test(src)) return src;
+  const base = siteSeoConfig.defaultSiteUrl;
+  const path = src.startsWith('/') ? src : `/${src}`;
+  return `${base}${path}`;
+}
+
 export const seoPages = [
   {
     path: '/',

@@ -11,18 +11,18 @@ export const aboutData = {
   intro: {
     name: siteData.doctor.name,
     title: siteData.doctor.subtitle,
-    qualification: 'Qualification details pending client confirmation',
+    // Populated from client-provided draft data. Confirm exact wording before launch.
+    qualification: siteData.doctor.qualification,
     paragraphs: [
       'Dr. Rahul Tengse provides specialized nephrology consultation for patients and families seeking guidance for kidney health concerns, abnormal reports, and ongoing kidney disease follow-up.',
       'His consultation areas include kidney disease evaluation, dialysis care guidance, diabetic kidney disease, blood pressure-related kidney problems, kidney transplant guidance, and report review.',
       'The website content is structured to support patient awareness and appointment requests. It does not replace personalized medical advice, diagnosis, or treatment.',
-      'Final qualification wording, OPD schedule, and all public-use images must be confirmed by the client before launch.'
     ]
   },
   qualifications: [
-    { title: 'MBBS', note: 'Degree confirmation required before launch.' },
-    { title: 'MD Medicine', note: 'Exact degree line to be confirmed by client.' },
-    { title: 'DM Nephrology', note: 'Specialty qualification confirmation required.' }
+    { title: 'MBBS', note: '' },
+    { title: 'MD Medicine', note: '' },
+    { title: 'DM Nephrology', note: 'Nephrology Specialist Qualification' },
   ],
   specializations: [
     'Nephrology',
@@ -51,7 +51,7 @@ export const aboutData = {
     name: siteData.hospital.name,
     location: `${siteData.hospital.city}, ${siteData.hospital.state}, ${siteData.hospital.country}`,
     timing: siteData.hospital.opdTiming,
-    note: 'Hospital association details are shown for patient convenience. Exact address, map link, and OPD timing require client confirmation.',
+    note: 'Confirm exact OPD timing and map link with client before launch.',
     cta: { label: 'Contact Hospital', href: '/contact' }
   },
   mediaRecognition: {

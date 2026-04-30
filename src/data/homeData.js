@@ -2,7 +2,7 @@ export const homeHeroData = {
   eyebrow: 'Advanced Kidney Care in Parbhani',
   title: 'Dr. Rahul Tengse',
   subtitle: 'Kidney Specialist | Consultant Nephrologist',
-  qualification: 'Qualification details pending client confirmation',
+  qualification: 'MBBS, MD Medicine, DM Nephrology',
   description:
     'Specialized consultation for kidney disease, dialysis care, kidney transplant guidance, diabetic kidney disease, blood pressure-related kidney problems, and report review.',
   primaryCTA: {

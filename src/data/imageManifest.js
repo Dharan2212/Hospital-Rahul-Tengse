@@ -1,7 +1,17 @@
 /**
  * imageManifest.js — PRODUCTION SAFE VERSION (Vite compatible)
  *
- * Uses ES module imports so images work after build (Netlify / Vercel)
+ * Uses ES module imports so images work after build (Netlify / Vercel).
+ *
+ * OG IMAGE NOTE:
+ *   The doctor image is used as the default Open Graph / social preview image.
+ *   For best social sharing results, an ideal OG image is 1200×630px.
+ *   Replace og.default.src with a properly cropped 1200×630 image once available.
+ *   The OG image URL is made absolute using VITE_SITE_URL (see src/utils/seo.js).
+ *
+ * PERMCATH DUPLICATE NOTE:
+ *   src/assets/images/dialysis/permcath (2).webp is an unused duplicate file.
+ *   It is safe to delete. Only permcath.webp is imported here.
  */
 
 // ─── IMPORT ALL IMAGES ─────────────────────────────────────────────
@@ -13,11 +23,6 @@ import avFistulaImg from '../assets/images/dialysis/av-fistula.webp';
 import permcathImg from '../assets/images/dialysis/permcath.webp';
 
 import awarenessImg from '../assets/images/awareness/kidney-awareness-1.webp';
-
-// If needed later
-// import media1 from '../assets/images/media/media-1.webp';
-// import gallery1 from '../assets/images/gallery/gallery-1.webp';
-
 
 // ─── MANIFEST ─────────────────────────────────────────────────────
 
@@ -90,20 +95,24 @@ export const imageManifest = {
   // ─── Kidney care graphics ─────────────────────────────────────
   kidneyCare: [],
 
-  // ─── Open Graph ───────────────────────────────────────────────
+  // ─── Open Graph / Social Preview ──────────────────────────────
+  // Using the doctor image as default OG image (approved).
+  // For ideal social preview, replace with a 1200×630px image once available.
+  // The SEO utility (src/utils/seo.js) prepends VITE_SITE_URL to make this absolute.
   og: {
     default: {
-      src: null,
+      src: doctorImg,
       alt: 'Dr. Rahul Tengse Kidney Specialist Parbhani',
-      status: 'pending-client-approval',
-      frontendUseAllowed: false,
+      status: 'approved',
+      frontendUseAllowed: true,
     },
   },
 
   // ─── Favicon ──────────────────────────────────────────────────
+  // favicon.png is placed in /public/ by scripts/prepare-assets.mjs (prebuild).
   favicon: {
-    src: null,
-    status: 'pending-client-approval',
-    frontendUseAllowed: false,
+    src: '/favicon.png',
+    status: 'approved',
+    frontendUseAllowed: true,
   },
 };

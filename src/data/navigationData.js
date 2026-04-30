@@ -5,7 +5,8 @@
  * navItems         — structured array used by desktop Header (supports children dropdown)
  */
 
-// ─── Mobile menu uses this flat array (unchanged) ─────────────────────────────
+// ─── Mobile menu flat array ────────────────────────────────────────────────────
+// All links including Appointment for mobile users.
 export const navigationLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
@@ -15,10 +16,12 @@ export const navigationLinks = [
   { label: 'Awareness', href: '/patient-awareness' },
   { label: 'Media', href: '/media-news' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Appointment', href: '/appointment' },
   { label: 'Contact', href: '/contact' },
 ];
 
-// ─── Desktop header uses this structured array (with dropdown support) ─────────
+// ─── Desktop header structured array (with dropdown support) ───────────────────
+// Appointment is added as a top-level item (desktop users also see the header CTA button).
 export const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
@@ -33,5 +36,6 @@ export const navItems = [
   },
   { label: 'Media', href: '/media-news' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Appointment', href: '/appointment' },
   { label: 'Contact', href: '/contact' },
 ];

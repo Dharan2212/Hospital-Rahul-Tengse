@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/prepare-assets.mjs pre",
     "build": "vite build",
+    "postbuild": "node scripts/prepare-assets.mjs post",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare-assets": "node scripts/prepare-assets.mjs pre"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.2",
