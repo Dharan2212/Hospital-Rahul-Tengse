@@ -3,9 +3,9 @@ import { siteData } from './siteData.js';
 export const aboutData = {
   hero: {
     eyebrow: 'About the doctor',
-    title: 'About Dr. Rahul Tengse',
+    title: 'About Dr. Rahul Bhaskarrao Tengse',
     description:
-      'Learn about Dr. Rahul Tengse, Consultant Nephrologist, and his patient-focused approach to kidney disease, dialysis care guidance, transplant-related guidance, and report review.',
+      'Learn about Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist and Kidney Transplant Physician, and his patient-focused approach to kidney care.',
     primaryCTA: { label: 'Book Consultation', href: '/appointment', variant: 'primary' }
   },
   intro: {
@@ -14,7 +14,7 @@ export const aboutData = {
     // Populated from client-provided draft data. Confirm exact wording before launch.
     qualification: siteData.doctor.qualification,
     paragraphs: [
-      'Dr. Rahul Tengse provides specialized nephrology consultation for patients and families seeking guidance for kidney health concerns, abnormal reports, and ongoing kidney disease follow-up.',
+      'Dr. Rahul Bhaskarrao Tengse provides specialized nephrology consultation for patients and families seeking guidance for kidney health concerns, abnormal reports, and ongoing kidney disease follow-up.',
       'His consultation areas include kidney disease evaluation, dialysis care guidance, diabetic kidney disease, blood pressure-related kidney problems, kidney transplant guidance, and report review.',
       'The website content is structured to support patient awareness and appointment requests. It does not replace personalized medical advice, diagnosis, or treatment.',
     ]
@@ -55,7 +55,7 @@ export const aboutData = {
     cta: { label: 'Contact Hospital', href: '/contact' }
   },
   mediaRecognition: {
-    text: 'Dr. Rahul Tengse has been featured in local and regional newspapers for kidney health awareness.',
+    text: 'Dr. Rahul Bhaskarrao Tengse has been featured in local and regional newspapers for kidney health awareness.',
     href: '/media-news'
   },
   cta: {

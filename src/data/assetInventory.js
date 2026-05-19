@@ -3,7 +3,7 @@
 // No actual cleaned image files were available, so optimized outputs are marked missing or blocked.
 
 export const assetInventoryMeta = {
-  "project": "Dr. Rahul Tengse — Kidney Specialist Website",
+  "project": "Dr. Rahul Bhaskarrao Tengse — Kidney Specialist Website",
   "batch": "Phase 1 — Batch 1.3",
   "batchName": "Image Optimization",
   "generatedAt": "2026-04-26T23:07:19+05:30",
@@ -92,7 +92,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Dr. Rahul Tengse, Kidney Specialist in Parbhani",
+    "altTextDraft": "Dr. Rahul Bhaskarrao Tengse, Kidney Specialist in Parbhani",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No approved doctor hero image was available in the current attachment set. Do not use a generated or placeholder doctor image for identity-sensitive pages. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -115,7 +115,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Dr. Rahul Tengse, Kidney Specialist in Parbhani",
+    "finalAltText": "Dr. Rahul Bhaskarrao Tengse, Kidney Specialist in Parbhani",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -146,7 +146,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Dr. Rahul Tengse, Consultant Nephrologist in Parbhani",
+    "altTextDraft": "Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist in Parbhani",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "A secondary professional doctor image is recommended for about-page variation, but no source image is currently available. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -169,7 +169,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Dr. Rahul Tengse, Kidney Specialist in Parbhani",
+    "finalAltText": "Dr. Rahul Bhaskarrao Tengse, Kidney Specialist in Parbhani",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -260,7 +260,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Dr. Rahul Tengse Kidney Specialist Logo",
+    "altTextDraft": "Dr. Rahul Bhaskarrao Tengse Kidney Specialist Logo",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No official doctor/hospital logo was available. Until provided, use text-based brand treatment in later UI batches. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -283,7 +283,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Dr. Rahul Tengse Kidney Specialist Logo",
+    "finalAltText": "Dr. Rahul Bhaskarrao Tengse Kidney Specialist Logo",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -316,7 +316,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Newspaper coverage of kidney awareness by Dr. Rahul Tengse",
+    "altTextDraft": "Newspaper coverage of kidney awareness by Dr. Rahul Bhaskarrao Tengse",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No newspaper/media image was attached. Future clippings must not be used as hero banners and must be cropped/redacted before publishing. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -340,7 +340,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Newspaper coverage of kidney awareness — Dr. Rahul Tengse",
+    "finalAltText": "Newspaper coverage of kidney awareness — Dr. Rahul Bhaskarrao Tengse",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -394,7 +394,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Newspaper coverage of kidney awareness — Dr. Rahul Tengse",
+    "finalAltText": "Newspaper coverage of kidney awareness — Dr. Rahul Bhaskarrao Tengse",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -425,7 +425,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Kidney Health Awareness — Dr. Rahul Tengse",
+    "altTextDraft": "Kidney Health Awareness — Dr. Rahul Bhaskarrao Tengse",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No awareness poster was attached. Future posters should mainly be used as content sources, not pasted as full-page content blocks. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -448,7 +448,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Kidney Health Awareness — Dr. Rahul Tengse",
+    "finalAltText": "Kidney Health Awareness — Dr. Rahul Bhaskarrao Tengse",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -501,7 +501,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Kidney Health Awareness — Dr. Rahul Tengse",
+    "finalAltText": "Kidney Health Awareness — Dr. Rahul Bhaskarrao Tengse",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -693,7 +693,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Gallery image related to Dr. Rahul Tengse kidney care services",
+    "altTextDraft": "Gallery image related to Dr. Rahul Bhaskarrao Tengse kidney care services",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No approved gallery image set was available. Patient photographs, visible records, and identifiable hospital data must be excluded. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -716,7 +716,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Gallery image for Dr. Rahul Tengse Kidney Care",
+    "finalAltText": "Gallery image for Dr. Rahul Bhaskarrao Tengse Kidney Care",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -747,7 +747,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Dr. Rahul Tengse Kidney Specialist Parbhani social preview image",
+    "altTextDraft": "Dr. Rahul Bhaskarrao Tengse Kidney Specialist Parbhani social preview image",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No OG/social preview source image found. Generate only from approved doctor photo or approved branding in a later batch. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -770,7 +770,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Dr. Rahul Tengse, Kidney Specialist in Parbhani",
+    "finalAltText": "Dr. Rahul Bhaskarrao Tengse, Kidney Specialist in Parbhani",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {
@@ -802,7 +802,7 @@ export const assetInventory = [
       "client-approval-before-public-use",
       "batch-1.3-optimization-blocked-until-source-exists"
     ],
-    "altTextDraft": "Dr. Rahul Tengse website favicon source",
+    "altTextDraft": "Dr. Rahul Bhaskarrao Tengse website favicon source",
     "frontendUseAllowed": false,
     "approvalRequiredBeforeUse": true,
     "notes": "No favicon source found. Do not generate favicon from unapproved logo or branding. Not approved for public website use yet. Batch 1.3: No frontend usage allowed. No optimized public asset exists yet.",
@@ -825,7 +825,7 @@ export const assetInventory = [
       "og": null
     },
     "optimizedStatus": "missing",
-    "finalAltText": "Dr. Rahul Tengse Kidney Specialist Logo",
+    "finalAltText": "Dr. Rahul Bhaskarrao Tengse Kidney Specialist Logo",
     "seoFileNameApproved": true,
     "fileSizeNotes": "No source/cleaned file available, so no file size is available.",
     "imageDimensions": {

@@ -29,7 +29,7 @@ export function MediaCoveragePreview() {
               <MotionReveal key={item.id} as="article" className="rounded-card border border-border bg-white p-5 shadow-card">
                 <img
                   src={item.thumbnail}
-                  alt={item.alt || 'Newspaper coverage of kidney awareness - Dr. Rahul Tengse'}
+                  alt={item.alt || 'Newspaper coverage of kidney awareness - Dr. Rahul Bhaskarrao Tengse'}
                   className="mb-4 aspect-video w-full rounded-2xl object-cover"
                 />
                 <h3 className="font-heading text-lg font-bold text-navy">{item.title}</h3>

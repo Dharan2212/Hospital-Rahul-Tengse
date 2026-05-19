@@ -26,7 +26,7 @@ import logo from '../assets/images/logo/logo.png';
 
 export const siteData = {
   doctor: {
-    name: 'Dr. Rahul Tengse',
+    name: 'Dr. Rahul Bhaskarrao Tengse',
     subtitle: 'Consultant Nephrologist | Kidney Disease, Dialysis & Kidney Transplant Guidance',
     // [DRAFT] Confirm exact qualification line with client before launch
     qualification: 'MBBS, MD Medicine, DM Nephrology',
@@ -87,7 +87,7 @@ export const siteData = {
     useLogoImage: true,
     initials: 'RT',
     logoSrc: logo,
-    logoAlt: 'Dr. Rahul Tengse Kidney Specialist Logo',
+    logoAlt: 'Dr. Rahul Bhaskarrao Tengse Kidney Specialist Logo',
     logoWidth: 44,
     logoHeight: 44,
   },

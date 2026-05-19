@@ -25,7 +25,7 @@ export function MediaCard({ item, onView }) {
       <div className="aspect-[4/3] overflow-hidden bg-sky">
         <motion.img
           src={item.thumbnail}
-          alt={item.alt || 'Newspaper coverage of kidney awareness - Dr. Rahul Tengse'}
+          alt={item.alt || 'Newspaper coverage of kidney awareness - Dr. Rahul Bhaskarrao Tengse'}
           className="h-full w-full object-cover"
           loading="lazy"
           whileHover={mediaImageHoverMotion(shouldReduceMotion)}

@@ -30,8 +30,8 @@ export const galleryData = [
   {
     id: 2,
     title: 'Kidney Health Awareness',
-    caption: 'Kidney health awareness programme — Dr. Rahul Tengse, Parbhani.',
-    alt: 'Kidney Health Awareness Programme — Dr. Rahul Tengse, Parbhani',
+    caption: 'Kidney health awareness programme — Dr. Rahul Bhaskarrao Tengse, Parbhani.',
+    alt: 'Kidney Health Awareness Programme — Dr. Rahul Bhaskarrao Tengse, Parbhani',
     category: 'Awareness Posters',
 
     thumbnail: gallery2,

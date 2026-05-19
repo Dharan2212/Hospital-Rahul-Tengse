@@ -1,8 +1,8 @@
 export const homeHeroData = {
   eyebrow: 'Advanced Kidney Care in Parbhani',
-  title: 'Dr. Rahul Tengse',
-  subtitle: 'Kidney Specialist | Consultant Nephrologist',
-  qualification: 'MBBS, MD Medicine, DM Nephrology',
+  title: 'Dr. Rahul Bhaskarrao Tengse',
+  subtitle: 'Consultant Nephrologist and Kidney Transplant Physician',
+  qualification: 'MBBS | MD General Medicine | DM Nephrology',
   description:
     'Specialized consultation for kidney disease, dialysis care, kidney transplant guidance, diabetic kidney disease, blood pressure-related kidney problems, and report review.',
   primaryCTA: {
@@ -58,7 +58,7 @@ export const aboutPreviewData = {
     href: '/about'
   },
   paragraphs: [
-    'Dr. Rahul Tengse provides nephrology consultation for patients and families seeking guidance for kidney disease, dialysis care, kidney transplant-related evaluation, and report review.',
+    'Dr. Rahul Bhaskarrao Tengse provides kidney care with a patient-focused approach, combining consultation, report review, and disease guidance with individualized attention.',
     'The website uses a medically safe patient-awareness approach and avoids unsupported claims or guarantees.',
     'Final qualification details, OPD timing, and image approval must be confirmed by the client before launch.'
   ]
@@ -117,7 +117,7 @@ export const awarenessPreviewData = [
   {
     title: 'Kidney Disease Symptoms',
     description:
-      'Learn about general warning signs such as swelling, tiredness, urine changes, and abnormal kidney reports.',
+      'Learn about Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist and Kidney Transplant Physician, and his patient-focused approach to kidney care.',
     icon: 'AlertCircle',
     color: 'teal',
     href: '/patient-awareness'

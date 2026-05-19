@@ -92,7 +92,7 @@ function Footer() {
         </section>
       </div>
       <div className="border-t border-teal/40 px-4 py-5 text-center text-sm text-white/70">
-        © 2026 Dr. Rahul Tengse. All rights reserved.
+        © 2026 Dr. Rahul Bhaskarrao Tengse. All rights reserved.
       </div>
     </footer>
   );

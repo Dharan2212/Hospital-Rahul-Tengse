@@ -36,7 +36,7 @@ function safeValue(value, fallback = 'Not provided') {
 }
 
 export function buildWhatsAppMessage(formData, dataSource = {}) {
-  const doctorName = dataSource?.doctor?.name || 'Dr. Rahul Tengse';
+  const doctorName = dataSource?.doctor?.name || 'Dr. Rahul Bhaskarrao Tengse';
   const hospitalName = dataSource?.hospital?.name || 'Shivneri Super Speciality & Surya ICU Hospital';
 
   return [

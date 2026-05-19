@@ -44,20 +44,20 @@ export function SEO({
 
       {/* Open Graph */}
       <meta property="og:locale" content={siteSeoConfig.locale} />
-      <meta property="og:site_name" content="Dr. Rahul Tengse — Kidney Specialist Parbhani" />
+      <meta property="og:site_name" content="Dr. Rahul Bhaskarrao Tengse — Kidney Specialist Parbhani" />
       <meta property="og:title" content={finalOgTitle} />
       <meta property="og:description" content={finalOgDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content={finalOgType} />
       {absoluteOgImage && <meta property="og:image" content={absoluteOgImage} />}
-      {absoluteOgImage && <meta property="og:image:alt" content="Dr. Rahul Tengse — Kidney Specialist Parbhani" />}
+      {absoluteOgImage && <meta property="og:image:alt" content="Dr. Rahul Bhaskarrao Tengse — Kidney Specialist Parbhani" />}
 
       {/* Twitter Card */}
       <meta name="twitter:card" content={siteSeoConfig.twitterCard} />
       <meta name="twitter:title" content={finalOgTitle} />
       <meta name="twitter:description" content={finalOgDescription} />
       {absoluteOgImage && <meta name="twitter:image" content={absoluteOgImage} />}
-      {absoluteOgImage && <meta name="twitter:image:alt" content="Dr. Rahul Tengse — Kidney Specialist Parbhani" />}
+      {absoluteOgImage && <meta name="twitter:image:alt" content="Dr. Rahul Bhaskarrao Tengse — Kidney Specialist Parbhani" />}
 
       {/* JSON-LD Schema */}
       {schema && (

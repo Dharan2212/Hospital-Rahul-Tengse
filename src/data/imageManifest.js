@@ -33,14 +33,14 @@ export const imageManifest = {
     hero: {
       src: doctorImg,
       srcSet: [],
-      alt: 'Dr. Rahul Tengse, Kidney Specialist in Parbhani',
+      alt: 'Dr. Rahul Bhaskarrao Tengse, Kidney Specialist in Parbhani',
       status: 'approved',
       frontendUseAllowed: true,
     },
     profile: {
       src: doctorImg,
       srcSet: [],
-      alt: 'Dr. Rahul Tengse, Consultant Nephrologist, Parbhani',
+      alt: 'Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist, Parbhani',
       status: 'approved',
       frontendUseAllowed: true,
     },
@@ -80,7 +80,7 @@ export const imageManifest = {
     {
       id: 'kidney-awareness-1',
       src: awarenessImg,
-      alt: 'Kidney Health Awareness — Dr. Rahul Tengse',
+      alt: 'Kidney Health Awareness — Dr. Rahul Bhaskarrao Tengse',
       status: 'approved',
       frontendUseAllowed: true,
     },
@@ -102,7 +102,7 @@ export const imageManifest = {
   og: {
     default: {
       src: doctorImg,
-      alt: 'Dr. Rahul Tengse Kidney Specialist Parbhani',
+      alt: 'Dr. Rahul Bhaskarrao Tengse Kidney Specialist Parbhani',
       status: 'approved',
       frontendUseAllowed: true,
     },
