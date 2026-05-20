@@ -26,9 +26,9 @@ export function TrustHighlights() {
     <section className="bg-white py-14 md:py-16 lg:py-20">
       <Container>
         <SectionHeader
-          eyebrow="Patient-focused care"
-          heading="Kidney Care You Can Trust"
-          description="Patient-focused nephrology guidance for kidney disease, dialysis care, transplant guidance, and awareness."
+          eyebrow="Why patients choose Dr. Tengse"
+          heading="Kidney Care Built Around You"
+          description="From chronic kidney disease and dialysis guidance to kidney transplant support and patient education — specialist nephrology care in Parbhani."
           align="center"
           className="mx-auto mb-10"
         />

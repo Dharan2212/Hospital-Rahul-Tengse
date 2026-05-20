@@ -25,8 +25,8 @@ export function PatientAwarenessPreview() {
       <Container>
         <SectionHeader
           eyebrow="Patient awareness"
-          heading="Kidney Health Awareness"
-          description="Simple educational guidance to help patients and families understand kidney health warning signs and risk factors."
+          heading="Understanding Your Kidney Health"
+          description="Educational guidance to help patients and families in Parbhani recognise kidney disease warning signs, understand risk factors, and know when to seek specialist advice."
           align="center"
           className="mb-10"
         />

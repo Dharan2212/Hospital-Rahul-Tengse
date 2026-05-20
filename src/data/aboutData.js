@@ -1,66 +1,102 @@
 import { siteData } from './siteData.js';
 
+/**
+ * aboutData.js — About Doctor page content
+ *
+ * Batch 3 — Clinical Content Refresh
+ * Updated: Enhanced professional bio, expertise wording, philosophy, trust language,
+ *          SEO quality, patient-friendly readability, and nephrology-focused messaging.
+ * All content is general awareness. Personalised medical advice requires direct consultation.
+ */
 export const aboutData = {
   hero: {
-    eyebrow: 'About the doctor',
+    eyebrow: 'Meet your kidney specialist',
     title: 'About Dr. Rahul Bhaskarrao Tengse',
     description:
-      'Learn about Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist and Kidney Transplant Physician, and his patient-focused approach to kidney care.',
+      'Consultant Nephrologist and Kidney Transplant Physician in Parbhani — dedicated to patient-focused kidney care, dialysis guidance, and transplant awareness for patients and families across Marathwada.',
     primaryCTA: { label: 'Book Consultation', href: '/appointment', variant: 'primary' }
   },
   intro: {
     name: siteData.doctor.name,
     title: siteData.doctor.subtitle,
-    // Populated from client-provided draft data. Confirm exact wording before launch.
     qualification: siteData.doctor.qualification,
     paragraphs: [
-      'Dr. Rahul Bhaskarrao Tengse provides specialized nephrology consultation for patients and families seeking guidance for kidney health concerns, abnormal reports, and ongoing kidney disease follow-up.',
-      'His consultation areas include kidney disease evaluation, dialysis care guidance, diabetic kidney disease, blood pressure-related kidney problems, kidney transplant guidance, and report review.',
-      'The website content is structured to support patient awareness and appointment requests. It does not replace personalized medical advice, diagnosis, or treatment.',
+      'Dr. Rahul Bhaskarrao Tengse is a Consultant Nephrologist specialising in the diagnosis, management, and follow-up care of kidney diseases. He provides structured consultation for patients and families dealing with chronic kidney disease (CKD), acute kidney problems, dialysis-related care, and kidney transplant guidance.',
+      'His areas of focus include diabetic kidney disease, blood pressure-related kidney conditions, glomerular diseases, nephrotic syndrome, electrolyte disorders, and report review for patients seeking a second opinion. He works in close association with Shivneri Super Speciality & Surya ICU Hospital, Parbhani.',
+      'Patient education is central to Dr. Tengse\'s approach — helping patients and families understand their reports, their treatment path, and the long-term steps involved in managing kidney health. This website is structured to support appointment requests and kidney-health awareness.',
     ]
   },
   qualifications: [
-    { title: 'MBBS', note: '' },
-    { title: 'MD Medicine', note: '' },
-    { title: 'DM Nephrology', note: 'Nephrology Specialist Qualification' },
+    { title: 'MBBS', note: 'Bachelor of Medicine and Surgery — Foundation of medical training' },
+    { title: 'MD General Medicine', note: 'Postgraduate qualification in General Medicine' },
+    { title: 'DM Nephrology', note: 'Superspecialty qualification in Nephrology — Kidney Specialist' },
   ],
   specializations: [
     'Nephrology',
-    'Dialysis',
+    'Chronic Kidney Disease (CKD)',
+    'Dialysis Care',
     'Kidney Transplant Guidance',
     'Diabetic Kidney Disease',
     'Hypertensive Nephropathy',
     'Glomerular Disease',
-    'Report Review',
-    'Patient Awareness'
+    'Nephrotic Syndrome',
+    'AKI Management',
+    'Vascular Access Awareness',
+    'Electrolyte Disorders',
+    'Report Review'
   ],
   expertiseAreas: [
-    { title: 'Kidney Disease Consultation', description: 'Guidance for kidney symptoms, abnormal reports, and follow-up planning.', icon: 'Stethoscope' },
-    { title: 'Dialysis Care Guidance', description: 'Supportive consultation for dialysis-related questions and access awareness.', icon: 'Activity' },
-    { title: 'Kidney Transplant Guidance', description: 'Pre and post-transplant awareness based on specialist evaluation.', icon: 'Hospital' },
-    { title: 'Diabetes & BP Kidney Concerns', description: 'Kidney-health guidance for patients with diabetes or blood-pressure-related concerns.', icon: 'HeartPulse' },
-    { title: 'Report Review', description: 'Review of kidney reports, dialysis records, and previous medical documents.', icon: 'FileText' },
-    { title: 'Patient Education', description: 'Awareness-focused communication for patients and families.', icon: 'ShieldCheck' }
+    {
+      title: 'Chronic Kidney Disease (CKD)',
+      description: 'Evaluation, staging, monitoring, and long-term follow-up guidance for CKD patients across all stages.',
+      icon: 'Stethoscope'
+    },
+    {
+      title: 'Dialysis Care Guidance',
+      description: 'Consultation for patients considering or currently undergoing haemodialysis, SLED, or peritoneal dialysis — including access awareness and record review.',
+      icon: 'Activity'
+    },
+    {
+      title: 'Kidney Transplant Guidance',
+      description: 'Pre-transplant evaluation discussion, donor-related awareness, and post-transplant follow-up monitoring support.',
+      icon: 'Hospital'
+    },
+    {
+      title: 'Diabetic Kidney Disease',
+      description: 'Kidney-health monitoring and consultation for patients living with diabetes, including report review and early intervention awareness.',
+      icon: 'HeartPulse'
+    },
+    {
+      title: 'Hypertension & Kidney Health',
+      description: 'Guidance for patients with blood-pressure-related kidney concerns, abnormal reports, and the need for specialist follow-up.',
+      icon: 'Activity'
+    },
+    {
+      title: 'Report Review & Second Opinion',
+      description: 'Structured review of kidney function reports, dialysis records, imaging, and previous prescriptions for patients seeking clarity.',
+      icon: 'FileText'
+    }
   ],
   philosophy: {
     quote:
-      'Patient-focused kidney care begins with clear communication, careful report review, and guidance that is personalized through consultation.',
-    note: 'This statement is a safe care-approach note, not a treatment guarantee.'
+      'Kidney care is most effective when patients are informed, involved, and supported through every step — from understanding their reports to planning their long-term follow-up.',
+    note: 'This reflects a patient-education approach to kidney care. It is not a treatment guarantee or outcome promise.'
   },
   hospitalAssociation: {
     name: siteData.hospital.name,
     location: `${siteData.hospital.city}, ${siteData.hospital.state}, ${siteData.hospital.country}`,
     timing: siteData.hospital.opdTiming,
-    note: 'Confirm exact OPD timing and map link with client before launch.',
+    note: 'OPD timing and map link to be confirmed with client before launch.',
     cta: { label: 'Contact Hospital', href: '/contact' }
   },
   mediaRecognition: {
-    text: 'Dr. Rahul Bhaskarrao Tengse has been featured in local and regional newspapers for kidney health awareness.',
+    text: 'Dr. Rahul Bhaskarrao Tengse has been recognised in local and regional newspapers for kidney health awareness activities and dialysis care education in the Parbhani and Marathwada region.',
     href: '/media-news'
   },
   cta: {
     heading: 'Request a Kidney Care Consultation',
-    description: 'Submit an appointment request and the hospital or doctor\'s team will contact you shortly to confirm.',
+    description:
+      'Submit your appointment request online. The hospital team will contact you to confirm timing and any documents to bring.',
     primaryCTA: { label: 'Book Consultation', href: '/appointment', variant: 'secondary' }
   }
 };

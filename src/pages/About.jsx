@@ -58,8 +58,8 @@ function About() {
         <Container>
           <SectionHeader
             eyebrow="Qualifications"
-            heading="Qualification details for client confirmation"
-            description="The final public qualification line must be confirmed before launch."
+            heading="Medical Qualifications"
+            description="Formal qualifications as provided. Final confirmation of exact wording required before launch."
             align="center"
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">

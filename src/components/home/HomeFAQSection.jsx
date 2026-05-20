@@ -8,7 +8,7 @@ export function HomeFAQSection() {
         <SectionHeader
           eyebrow="FAQ"
           heading="Frequently Asked Questions"
-          description="General answers for patient awareness. Personalized medical advice requires consultation."
+          description="General guidance to help patients understand kidney care. Personalised medical advice requires a consultation with the doctor."
           align="center"
           className="mb-10"
         />

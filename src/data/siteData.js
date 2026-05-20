@@ -58,6 +58,8 @@ export const siteData = {
     // [DRAFT] Email confirmed from client-provided data — verify before launch
     email: 'shivnerihospital24@gmail.com',
     instagramUrl: 'https://www.instagram.com/drrahultengse/',
+    // [DRAFT] Facebook page — confirm if this is the correct doctor/hospital page
+    facebookUrl: 'https://www.facebook.com/share/18xSSn4rsg/',
   },
 
   cta: {

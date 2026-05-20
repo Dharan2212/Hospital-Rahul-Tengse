@@ -19,6 +19,7 @@ function DialysisCare() {
         background="gradient"
       />
 
+      {/* What is dialysis */}
       <section className="bg-white py-14 md:py-20">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
@@ -39,10 +40,16 @@ function DialysisCare() {
         </Container>
       </section>
 
+      {/* When dialysis may be needed */}
       <section className="bg-bgAlt py-14 md:py-20">
         <Container>
-          <SectionHeader eyebrow="Evaluation" heading="When dialysis may be needed" description="Dialysis decisions must always be based on doctor consultation and medical reports." align="center" />
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <SectionHeader
+            eyebrow="Clinical situations"
+            heading="When dialysis may be needed"
+            description="Dialysis decisions are always guided by specialist assessment, reports, and clinical condition — not symptoms alone."
+            align="center"
+          />
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {dialysisData.whenNeeded.map((item) => (
               <InfoCard key={item.title} icon={item.icon} title={item.title} description={item.description} />
             ))}
@@ -50,10 +57,11 @@ function DialysisCare() {
         </Container>
       </section>
 
+      {/* Dialysis types */}
       <section className="bg-white py-14 md:py-20">
         <Container>
-          <SectionHeader eyebrow="Dialysis guidance" heading="Types of dialysis-related guidance" align="center" />
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <SectionHeader eyebrow="Types of dialysis" heading="Dialysis modalities — guidance overview" description="Each type of dialysis has specific indications, advantages, and suitability criteria determined by your specialist." align="center" />
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">
             {dialysisData.guidanceSections.map((item) => (
               <InfoCard key={item.id} icon={item.icon} title={item.title} description={item.description}>
                 <p className="rounded-card border border-border bg-bgAlt p-3 text-xs font-semibold text-navy">{item.disclaimer}</p>
@@ -63,9 +71,15 @@ function DialysisCare() {
         </Container>
       </section>
 
+      {/* Vascular access awareness */}
       <section className="bg-bgAlt py-14 md:py-20">
         <Container>
-          <SectionHeader eyebrow="Dialysis access awareness" heading="AV Fistula and Permcath awareness" description="These sections are informational only and do not provide procedure instructions." align="center" />
+          <SectionHeader
+            eyebrow="Dialysis access"
+            heading="AV Fistula and Permcath — access awareness"
+            description="Understanding your dialysis access helps you care for it and discuss options with your specialist. These sections are educational, not procedure guides."
+            align="center"
+          />
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {dialysisData.accessAwareness.map((item) => (
               <InfoCard key={item.title} icon={item.icon} title={item.title} description={item.description} tone="blue" />
@@ -74,12 +88,27 @@ function DialysisCare() {
         </Container>
       </section>
 
+      {/* Lifestyle in dialysis */}
       <section className="bg-white py-14 md:py-20">
+        <Container>
+          <SectionHeader eyebrow="Lifestyle guidance" heading="Managing daily life on dialysis" description="Dialysis patients benefit from dietary, fluid, and lifestyle adjustments. Discuss your specific limits with your nephrologist." align="center" />
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {dialysisData.lifestylePoints.map((item) => (
+              <InfoCard key={item.title} icon={item.icon} title={item.title} description={item.description} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Patient safety notes */}
+      <section className="bg-bgAlt py-14 md:py-20">
         <Container>
           <AnimatedCard className="p-7 md:p-8">
             <h2 className="font-heading text-2xl font-bold text-navy">Patient Safety Notes</h2>
+            <p className="mt-2 text-sm leading-6 text-muted">Important reminders for patients on dialysis or being evaluated for dialysis.</p>
             <IconList items={dialysisData.safetyNotes} className="mt-6" />
           </AnimatedCard>
+          <Disclaimer type="general" compact className="mt-8" />
         </Container>
       </section>
 

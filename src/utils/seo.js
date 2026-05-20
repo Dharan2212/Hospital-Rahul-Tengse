@@ -12,7 +12,7 @@ export const siteSeoConfig = {
   defaultTitle: 'Dr. Rahul Bhaskarrao Tengse | Kidney Specialist Parbhani',
   titleTemplate: '%s',
   defaultDescription:
-    'Dr. Rahul Bhaskarrao Tengse - Consultant Nephrologist in Parbhani. Expert care for kidney disease, dialysis, and kidney transplant guidance.',
+    'Consult Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist and Kidney Transplant Physician in Parbhani — for kidney disease, dialysis care, kidney transplant guidance, and report review.',
   defaultOgImage:
     imageManifest.og?.default?.frontendUseAllowed === true && imageManifest.og?.default?.src
       ? imageManifest.og.default.src
@@ -48,12 +48,14 @@ export function buildAbsoluteOgImageUrl(src) {
 export const seoPages = [
   {
     path: '/',
-    title: 'Dr. Rahul Bhaskarrao Tengse | Kidney Specialist Parbhani',
+    title: 'Dr. Rahul Bhaskarrao Tengse | Kidney Specialist in Parbhani',
     description:
-      'Dr. Rahul Bhaskarrao Tengse - Consultant Nephrologist in Parbhani. Expert care for kidney disease, dialysis, and kidney transplant guidance.',
-    ogTitle: 'Dr. Rahul Bhaskarrao Tengse | Kidney Specialist Parbhani',
+      'Consult Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist and Kidney Transplant Physician in Parbhani — for kidney disease, dialysis care, kidney transplant guidance, diabetic kidney disease, and report review.',
+    ogTitle: 'Dr. Rahul Bhaskarrao Tengse | Kidney Specialist in Parbhani',
     ogDescription:
-      'Consultant Nephrologist in Parbhani for kidney disease, dialysis, and kidney transplant guidance.',
+      'Trusted kidney care in Parbhani by Dr. Rahul Bhaskarrao Tengse — Consultant Nephrologist. Specialised guidance for kidney disease, dialysis, and transplant.',
+    twitterDescription:
+      'Consult Dr. Rahul Bhaskarrao Tengse, Nephrologist in Parbhani, for kidney disease, dialysis care and kidney transplant guidance.',
     ogType: 'website',
     schemaType: 'Physician',
     canonicalPath: '/',
@@ -62,12 +64,14 @@ export const seoPages = [
   },
   {
     path: '/about',
-    title: 'About Dr. Rahul Bhaskarrao Tengse | Nephrologist Parbhani',
+    title: 'About Dr. Rahul Bhaskarrao Tengse | Consultant Nephrologist Parbhani',
     description:
-      'Learn about Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist at Shivneri Super Speciality Hospital. Specialized kidney care in Parbhani.',
-    ogTitle: 'About Dr. Rahul Bhaskarrao Tengse | Nephrologist Parbhani',
+      'Dr. Rahul Bhaskarrao Tengse is a Consultant Nephrologist and Kidney Transplant Physician in Parbhani — specialising in CKD, dialysis care, diabetic kidney disease, and transplant guidance at Shivneri Super Speciality Hospital.',
+    ogTitle: 'About Dr. Rahul Bhaskarrao Tengse | Nephrologist & Kidney Specialist Parbhani',
     ogDescription:
-      'Learn about Dr. Rahul Bhaskarrao Tengse and his kidney care association with Shivneri Super Speciality Hospital in Parbhani.',
+      'Meet Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist at Shivneri Super Speciality Hospital, Parbhani — expert in kidney disease, dialysis, and transplant guidance.',
+    twitterDescription:
+      'Dr. Rahul Bhaskarrao Tengse — Consultant Nephrologist in Parbhani. Specialised kidney care, dialysis guidance, and transplant consultation.',
     ogType: 'website',
     schemaType: 'Physician',
     canonicalPath: '/about',
@@ -76,12 +80,14 @@ export const seoPages = [
   },
   {
     path: '/services',
-    title: 'Kidney Care Services | Dr. Rahul Bhaskarrao Tengse Parbhani',
+    title: 'Kidney Care Services | Dr. Rahul Bhaskarrao Tengse — Nephrologist Parbhani',
     description:
-      'Comprehensive kidney care services including dialysis, kidney transplant guidance, biopsy, nephrotic syndrome, and more in Parbhani.',
+      'Kidney care services by Dr. Rahul Bhaskarrao Tengse in Parbhani — including CKD management, dialysis care, SLED, peritoneal dialysis, nephrotic syndrome, kidney biopsy, transplant guidance, and report review.',
     ogTitle: 'Kidney Care Services | Dr. Rahul Bhaskarrao Tengse Parbhani',
     ogDescription:
-      'Kidney care service guidance including dialysis, transplant guidance, biopsy, nephrotic syndrome, and report review.',
+      'Comprehensive nephrology services in Parbhani — dialysis, transplant guidance, kidney disease consultation, biopsy, nephrotic syndrome, and more.',
+    twitterDescription:
+      'Kidney care services by Dr. Rahul Tengse, Nephrologist in Parbhani — dialysis, transplant guidance, CKD management, and specialist consultation.',
     ogType: 'website',
     schemaType: 'MedicalWebPage',
     canonicalPath: '/services',
@@ -90,12 +96,14 @@ export const seoPages = [
   },
   {
     path: '/dialysis-care',
-    title: 'Dialysis Care Parbhani | Dr. Rahul Bhaskarrao Tengse',
+    title: 'Dialysis Care Parbhani | Haemodialysis, Peritoneal Dialysis & AV Fistula Guidance',
     description:
-      'Dialysis care guidance in Parbhani. Learn about SLED, peritoneal dialysis, AV Fistula, and Permcath from Dr. Rahul Bhaskarrao Tengse.',
-    ogTitle: 'Dialysis Care Parbhani | Dr. Rahul Bhaskarrao Tengse',
+      'Patient-friendly dialysis care guidance by Dr. Rahul Tengse in Parbhani — covering haemodialysis, SLED, peritoneal dialysis, AV Fistula, Permcath, HCV dialysis support, and patient safety.',
+    ogTitle: 'Dialysis Care Parbhani | Dr. Rahul Bhaskarrao Tengse Nephrologist',
     ogDescription:
-      'Patient-friendly dialysis care guidance for SLED, peritoneal dialysis, AV Fistula, and Permcath awareness.',
+      'Educational dialysis guidance for patients in Parbhani — haemodialysis, SLED, peritoneal dialysis, AV Fistula, and Permcath awareness by Dr. Rahul Tengse.',
+    twitterDescription:
+      'Dialysis care guidance in Parbhani by Dr. Rahul Tengse — haemodialysis, peritoneal dialysis, and vascular access awareness.',
     ogType: 'website',
     schemaType: 'MedicalWebPage',
     canonicalPath: '/dialysis-care',
@@ -104,12 +112,14 @@ export const seoPages = [
   },
   {
     path: '/kidney-transplant-guidance',
-    title: 'Kidney Transplant Guidance Parbhani | Dr. Rahul Bhaskarrao Tengse',
+    title: 'Kidney Transplant Guidance Parbhani | Dr. Rahul Bhaskarrao Tengse Nephrologist',
     description:
-      'Kidney transplant guidance from Dr. Rahul Bhaskarrao Tengse - evaluation, donor guidance, post-transplant follow-up in Parbhani.',
-    ogTitle: 'Kidney Transplant Guidance Parbhani | Dr. Rahul Bhaskarrao Tengse',
+      'Kidney transplant guidance in Parbhani by Dr. Rahul Bhaskarrao Tengse — pre-transplant evaluation awareness, living donor guidance, deceased donor information, post-transplant follow-up, and rejection awareness.',
+    ogTitle: 'Kidney Transplant Guidance | Dr. Rahul Bhaskarrao Tengse Parbhani',
     ogDescription:
-      'Kidney transplant guidance covering evaluation awareness, donor guidance, and post-transplant follow-up in Parbhani.',
+      'Structured kidney transplant guidance by Dr. Rahul Tengse — evaluation awareness, donor discussion, post-transplant follow-up, and rejection monitoring. Educational content only.',
+    twitterDescription:
+      'Kidney transplant guidance in Parbhani by Dr. Rahul Tengse — evaluation, donor information, and post-transplant care awareness.',
     ogType: 'website',
     schemaType: 'MedicalWebPage',
     canonicalPath: '/kidney-transplant-guidance',
@@ -118,12 +128,14 @@ export const seoPages = [
   },
   {
     path: '/patient-awareness',
-    title: 'Kidney Health Awareness | Dr. Rahul Bhaskarrao Tengse Parbhani',
+    title: 'Kidney Health Awareness | CKD, Dialysis & Transplant Education | Dr. Rahul Tengse Parbhani',
     description:
-      'Learn about kidney disease symptoms, diabetes-related kidney risks, and when to consult a kidney specialist in Parbhani.',
+      'Learn about kidney disease, CKD stages, diabetes and kidney health, high blood pressure and kidneys, dialysis awareness, transplant guidance, and kidney screening in Parbhani — by Dr. Rahul Bhaskarrao Tengse.',
     ogTitle: 'Kidney Health Awareness | Dr. Rahul Bhaskarrao Tengse Parbhani',
     ogDescription:
-      'Kidney health awareness on symptoms, diabetes-related kidney risks, and when to consult a kidney specialist.',
+      'Educational kidney health content from Dr. Rahul Tengse — understanding CKD, warning signs, diabetes-related kidney risks, dialysis, and when to see a specialist.',
+    twitterDescription:
+      'Kidney health awareness by Dr. Rahul Tengse, Nephrologist in Parbhani — CKD stages, symptoms, and prevention guidance.',
     ogType: 'article',
     schemaType: 'MedicalWebPage',
     canonicalPath: '/patient-awareness',
@@ -132,12 +144,14 @@ export const seoPages = [
   },
   {
     path: '/media-news',
-    title: 'Media Coverage | Dr. Rahul Bhaskarrao Tengse Kidney Specialist',
+    title: 'Media Coverage — Kidney Awareness | Dr. Rahul Bhaskarrao Tengse, Nephrologist Parbhani',
     description:
-      "Newspaper coverage and media recognition for Dr. Rahul Bhaskarrao Tengse's kidney care awareness work in Parbhani.",
-    ogTitle: 'Media Coverage | Dr. Rahul Bhaskarrao Tengse Kidney Specialist',
+      'Newspaper and media coverage of kidney health awareness, dialysis care guidance, and nephrology education by Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist in Parbhani.',
+    ogTitle: 'Media Coverage | Kidney Awareness — Dr. Rahul Bhaskarrao Tengse, Parbhani',
     ogDescription:
-      "Media coverage and recognition for Dr. Rahul Tengse's kidney care awareness work in Parbhani.",
+      'Local and regional media coverage of kidney disease awareness and dialysis care education by Dr. Rahul Bhaskarrao Tengse, Nephrologist at Shivneri Super Speciality Hospital, Parbhani.',
+    twitterDescription:
+      'Media recognition for kidney health awareness work by Dr. Rahul Tengse, Consultant Nephrologist in Parbhani.',
     ogType: 'website',
     schemaType: 'WebPage',
     canonicalPath: '/media-news',
@@ -146,12 +160,14 @@ export const seoPages = [
   },
   {
     path: '/gallery',
-    title: 'Gallery | Dr. Rahul Bhaskarrao Tengse Kidney Specialist Parbhani',
+    title: 'Gallery — Hospital & Kidney Awareness | Dr. Rahul Bhaskarrao Tengse, Parbhani',
     description:
-      'Photo gallery of Dr. Rahul Bhaskarrao Tengse, Shivneri Super Speciality Hospital, awareness programs, and dialysis care.',
-    ogTitle: 'Gallery | Dr. Rahul Bhaskarrao Tengse Kidney Specialist Parbhani',
+      'Photo gallery of Dr. Rahul Bhaskarrao Tengse, Shivneri Super Speciality & Surya ICU Hospital, kidney health awareness programmes, dialysis care, and nephrology education in Parbhani.',
+    ogTitle: 'Photo Gallery | Dr. Rahul Bhaskarrao Tengse, Kidney Specialist Parbhani',
     ogDescription:
-      'Approved gallery for doctor, hospital, awareness program, and dialysis care images.',
+      'Approved image gallery — hospital facilities, kidney awareness programmes, and dialysis care education by Dr. Rahul Tengse, Nephrologist, Parbhani.',
+    twitterDescription:
+      'Gallery of Dr. Rahul Tengse — kidney care, dialysis awareness, and hospital images from Parbhani.',
     ogType: 'website',
     schemaType: 'WebPage',
     canonicalPath: '/gallery',
@@ -160,12 +176,14 @@ export const seoPages = [
   },
   {
     path: '/appointment',
-    title: 'Book Appointment | Dr. Rahul Bhaskarrao Tengse Parbhani',
+    title: 'Book Appointment | Dr. Rahul Bhaskarrao Tengse — Kidney Specialist Parbhani',
     description:
-      'Request a kidney care appointment with Dr. Rahul Bhaskarrao Tengse in Parbhani. Our team will contact you to confirm.',
-    ogTitle: 'Book Appointment | Dr. Rahul Bhaskarrao Tengse Parbhani',
+      'Request a kidney care appointment with Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist in Parbhani — for kidney disease consultation, dialysis care, transplant guidance, or report review.',
+    ogTitle: 'Book Kidney Care Appointment | Dr. Rahul Bhaskarrao Tengse, Parbhani',
     ogDescription:
-      'Request a kidney care appointment in Parbhani. The team will contact you to confirm timing.',
+      'Request an appointment with Dr. Rahul Tengse, Nephrologist in Parbhani. The hospital team will contact you to confirm your consultation.',
+    twitterDescription:
+      'Book a kidney care appointment with Dr. Rahul Tengse, Consultant Nephrologist in Parbhani.',
     ogType: 'website',
     schemaType: 'WebPage',
     canonicalPath: '/appointment',
@@ -174,12 +192,14 @@ export const seoPages = [
   },
   {
     path: '/contact',
-    title: 'Contact Dr. Rahul Bhaskarrao Tengse | Kidney Specialist Parbhani',
+    title: 'Contact | Dr. Rahul Bhaskarrao Tengse — Kidney Specialist, Shivneri Hospital Parbhani',
     description:
-      'Contact Dr. Rahul Bhaskarrao Tengse at Shivneri Super Speciality & Surya ICU Hospital, Parbhani. Get phone, address, and OPD timings.',
-    ogTitle: 'Contact Dr. Rahul Bhaskarrao Tengse | Kidney Specialist Parbhani',
+      'Contact Dr. Rahul Bhaskarrao Tengse at Shivneri Super Speciality & Surya ICU Hospital, Parbhani — phone, WhatsApp, email, address, and OPD timing for kidney care appointments.',
+    ogTitle: 'Contact Dr. Rahul Bhaskarrao Tengse | Nephrologist, Parbhani',
     ogDescription:
-      'Contact information for Dr. Rahul Tengse and Shivneri Super Speciality & Surya ICU Hospital in Parbhani.',
+      'Reach the kidney care team at Shivneri Super Speciality & Surya ICU Hospital, Parbhani — contact Dr. Rahul Tengse for consultation, dialysis guidance, or appointment enquiries.',
+    twitterDescription:
+      'Contact Dr. Rahul Tengse, Kidney Specialist at Shivneri Super Speciality Hospital, Parbhani.',
     ogType: 'website',
     schemaType: 'MedicalClinic',
     canonicalPath: '/contact',

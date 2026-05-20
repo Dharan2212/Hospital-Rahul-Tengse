@@ -60,8 +60,20 @@ export function buildPhysicianSchema(siteData) {
     affiliation: hospitalObject(siteData),
     address: hospitalAddress(siteData),
     telephone: confirmedTelephone(siteData),
+    sameAs: buildSameAsProfiles(siteData),
     url: siteSeoConfig.defaultSiteUrl
   });
+}
+
+/**
+ * buildSameAsProfiles — returns an array of confirmed social profile URLs
+ * for use in sameAs schema property.
+ */
+function buildSameAsProfiles(siteData) {
+  const profiles = [];
+  if (isConfirmedValue(siteData.contact.instagramUrl)) profiles.push(siteData.contact.instagramUrl);
+  if (isConfirmedValue(siteData.contact.facebookUrl)) profiles.push(siteData.contact.facebookUrl);
+  return profiles.length > 0 ? profiles : undefined;
 }
 
 export function buildMedicalClinicSchema(siteData) {
@@ -73,7 +85,7 @@ export function buildMedicalClinicSchema(siteData) {
     address: hospitalAddress(siteData),
     telephone: confirmedTelephone(siteData),
     openingHours: confirmedOpeningHours(siteData),
-    sameAs: isConfirmedValue(siteData.contact.instagramUrl) ? [siteData.contact.instagramUrl] : undefined,
+    sameAs: buildSameAsProfiles(siteData),
     url: buildCanonicalUrl('/contact')
   });
 }

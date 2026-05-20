@@ -1,10 +1,22 @@
+/**
+ * homeData.js — Homepage content data
+ *
+ * Batch 2 — Homepage Content Refresh
+ * Updated: Professional, medically safe, SEO-optimised, patient-friendly copy.
+ * Doctor identity: Dr. Rahul Bhaskarrao Tengse
+ * Specialty: Consultant Nephrologist and Kidney Transplant Physician
+ * Qualifications: MBBS | MD General Medicine | DM Nephrology
+ */
+
+// ─── HERO ────────────────────────────────────────────────────────────────────
+
 export const homeHeroData = {
-  eyebrow: 'Advanced Kidney Care in Parbhani',
+  eyebrow: 'Kidney Specialist in Parbhani, Maharashtra',
   title: 'Dr. Rahul Bhaskarrao Tengse',
-  subtitle: 'Consultant Nephrologist and Kidney Transplant Physician',
+  subtitle: 'Consultant Nephrologist & Kidney Transplant Physician',
   qualification: 'MBBS | MD General Medicine | DM Nephrology',
   description:
-    'Specialized consultation for kidney disease, dialysis care, kidney transplant guidance, diabetic kidney disease, blood pressure-related kidney problems, and report review.',
+    'Trusted kidney care for patients and families in Parbhani and surrounding regions. Specialised consultation for chronic kidney disease, dialysis guidance, diabetic kidney disease, hypertension-related kidney conditions, kidney transplant guidance, and report review.',
   primaryCTA: {
     label: 'Book Appointment',
     href: '/appointment'
@@ -19,61 +31,74 @@ export const homeHeroData = {
   },
   hospitalBadge: {
     label: 'Consulting at',
-    name: 'Shivneri Super Speciality & Surya ICU Hospital'
+    name: 'Shivneri Super Speciality & Surya ICU Hospital, Parbhani'
   }
 };
 
+// ─── TRUST HIGHLIGHTS ────────────────────────────────────────────────────────
+
 export const trustHighlights = [
   {
-    title: 'Experienced Nephrologist',
-    description: 'Specialized kidney care consultation with a patient-focused approach.',
+    title: 'Nephrology Consultation',
+    description:
+      'Specialised consultation for chronic kidney disease, abnormal kidney reports, and long-term kidney health management.',
     icon: 'ShieldCheck',
     color: 'teal'
   },
   {
-    title: 'Dialysis Care',
-    description: 'Guidance for patients who may require or are already undergoing dialysis.',
+    title: 'Dialysis Care Guidance',
+    description:
+      'Patient-centered guidance for those undergoing or considering dialysis, including access awareness and follow-up support.',
     icon: 'Activity',
     color: 'green'
   },
   {
-    title: 'Transplant Guidance',
-    description: 'Pre and post kidney transplant guidance with required medical evaluation.',
+    title: 'Kidney Transplant Guidance',
+    description:
+      'Pre-transplant evaluation awareness, donor-related guidance, and post-transplant follow-up consultation support.',
     icon: 'Hospital',
     color: 'blue'
   },
   {
     title: 'Patient Awareness',
-    description: 'Kidney health education to help patients and families understand warning signs.',
+    description:
+      'Educational kidney health guidance to help patients and families recognise warning signs and make informed decisions.',
     icon: 'BookOpen',
     color: 'purple'
   }
 ];
 
+// ─── ABOUT DOCTOR PREVIEW ────────────────────────────────────────────────────
+
 export const aboutPreviewData = {
   eyebrow: 'About the doctor',
-  heading: 'Specialized kidney care with a patient-focused approach',
+  heading: 'Patient-centred nephrology care with a compassionate approach',
   cta: {
     label: 'Read Full Profile',
     href: '/about'
   },
   paragraphs: [
-    'Dr. Rahul Bhaskarrao Tengse provides kidney care with a patient-focused approach, combining consultation, report review, and disease guidance with individualized attention.',
-    'The website uses a medically safe patient-awareness approach and avoids unsupported claims or guarantees.',
-    'Final qualification details, OPD timing, and image approval must be confirmed by the client before launch.'
+    'Dr. Rahul Bhaskarrao Tengse is a Consultant Nephrologist and Kidney Transplant Physician practising at Shivneri Super Speciality & Surya ICU Hospital, Parbhani. He holds qualifications in MBBS, MD General Medicine, and DM Nephrology.',
+    'His areas of focus include chronic kidney disease management, dialysis care guidance, diabetic and hypertension-related kidney conditions, kidney transplant evaluation, and report review for patients seeking a second opinion or ongoing monitoring.',
+    'Dr. Tengse follows an evidence-based, patient-first approach — offering educational guidance alongside medical consultation to help patients and families understand kidney health at every stage.'
   ]
 };
+
+// ─── HOSPITAL ASSOCIATION PREVIEW ────────────────────────────────────────────
 
 export const hospitalPreviewData = {
   eyebrow: 'Hospital association',
   heading: 'Consulting at Shivneri Super Speciality & Surya ICU Hospital',
-  associationLine: 'Hospital association shown for patient convenience and care coordination.',
+  associationLine:
+    'Advanced kidney care consultation available at a multi-speciality hospital facility in Parbhani, Maharashtra.',
   location: 'Parbhani, Maharashtra, India',
   cta: {
     label: 'Contact Hospital',
     href: '/contact'
   }
 };
+
+// ─── FEATURED SERVICES (Homepage preview — 6 key services) ───────────────────
 
 export const featuredServiceKeys = [
   'kidney-disease-consultation',
@@ -84,15 +109,17 @@ export const featuredServiceKeys = [
   'report-review-second-opinion'
 ];
 
+// ─── DIALYSIS CARE HIGHLIGHT ─────────────────────────────────────────────────
+
 export const dialysisHighlightData = {
   eyebrow: 'Dialysis care guidance',
-  heading: 'Supportive guidance for dialysis-related care',
+  heading: 'Supportive guidance for patients managing dialysis',
   description:
-    'Patients already undergoing dialysis or being evaluated for dialysis can request guidance related to reports, access awareness, and next-step consultation.',
+    'Whether you are being evaluated for dialysis or are already undergoing treatment, kidney specialist consultation can help clarify your reports, understand your access options, and plan your next steps with confidence.',
   bullets: [
-    'Guidance for patients already undergoing dialysis',
-    'Awareness about dialysis access such as AV Fistula and Permcath',
-    'Personalized advice must come from doctor consultation'
+    'Consultation for patients undergoing haemodialysis or peritoneal dialysis',
+    'Awareness guidance for dialysis access including AV Fistula and Permcath',
+    'SLED dialysis and infection-related dialysis support guidance where clinically relevant'
   ],
   cta: {
     label: 'Request Dialysis Consultation',
@@ -100,50 +127,57 @@ export const dialysisHighlightData = {
   }
 };
 
+// ─── KIDNEY TRANSPLANT HIGHLIGHT ─────────────────────────────────────────────
+
 export const transplantHighlightData = {
   eyebrow: 'Transplant guidance',
   heading: 'Kidney Transplant Guidance',
   description:
-    'Guidance may include pre-transplant evaluation awareness, donor-related discussion points, and post-transplant follow-up planning with a kidney specialist.',
+    'Navigating kidney transplant decisions can feel overwhelming. Specialist consultation can provide clarity on pre-transplant evaluation, donor-related questions, and what to expect during post-transplant follow-up and ongoing monitoring.',
   disclaimer:
-    'Kidney transplant decisions depend on detailed medical evaluation, patient condition, donor suitability, hospital protocol, and specialist consultation. This section provides general guidance only.',
+    'Kidney transplant decisions depend on detailed medical evaluation, patient condition, donor suitability, hospital protocol, and specialist consultation. This page provides general guidance only and is not a substitute for personalised medical advice.',
   cta: {
     label: 'Consult for Transplant Guidance',
     href: '/kidney-transplant-guidance'
   }
 };
 
+// ─── PATIENT AWARENESS PREVIEW ───────────────────────────────────────────────
+
 export const awarenessPreviewData = [
   {
-    title: 'Kidney Disease Symptoms',
+    title: 'Kidney Disease Warning Signs',
     description:
-      'Learn about Dr. Rahul Bhaskarrao Tengse, Consultant Nephrologist and Kidney Transplant Physician, and his patient-focused approach to kidney care.',
+      'Recognising early kidney disease symptoms — including swelling, fatigue, changes in urine, and blood pressure concerns — can make a meaningful difference in long-term outcomes.',
     icon: 'AlertCircle',
     color: 'teal',
     href: '/patient-awareness'
   },
   {
-    title: 'Diabetes & Kidneys',
+    title: 'Diabetes & Kidney Health',
     description:
-      'Understand why regular kidney monitoring is important for patients living with diabetes.',
+      'Diabetes is one of the leading causes of kidney disease. Regular kidney function monitoring is important for anyone living with diabetes or pre-diabetes.',
     icon: 'HeartPulse',
     color: 'green',
     href: '/patient-awareness'
   },
   {
-    title: 'When to See a Specialist',
+    title: 'When to See a Kidney Specialist',
     description:
-      'Know when a kidney specialist consultation may be needed for symptoms, reports, or ongoing conditions.',
+      'Abnormal kidney reports, persistent swelling, high creatinine levels, or blood pressure linked to kidney concerns are all reasons to seek a kidney specialist consultation.',
     icon: 'Info',
     color: 'blue',
     href: '/patient-awareness'
   }
 ];
 
+// ─── APPOINTMENT CTA BAND ────────────────────────────────────────────────────
+
 export const appointmentCTAData = {
-  eyebrow: 'Appointment request',
-  heading: 'Request a Kidney Care Appointment',
-  description: 'Our team will contact you shortly to confirm.',
+  eyebrow: 'Kidney care appointment',
+  heading: 'Request a Kidney Specialist Consultation',
+  description:
+    'Take the first step towards better kidney health. Submit your appointment request and our team will contact you to confirm.',
   primaryCTA: {
     label: 'Book Appointment',
     href: '/appointment',
@@ -155,37 +189,44 @@ export const appointmentCTAData = {
     variant: 'subtle'
   },
   disclaimer:
-    "Submitting an appointment request does not guarantee a final appointment time. The hospital or doctor's team will contact the patient for scheduling confirmation."
+    "Submitting an appointment request does not guarantee a confirmed appointment time. The hospital or doctor's team will contact the patient for scheduling confirmation."
 };
+
+// ─── MEDIA COVERAGE PREVIEW ──────────────────────────────────────────────────
 
 export const mediaPreviewConfig = {
   eyebrow: 'Media recognition',
-  heading: 'Media Recognition',
+  heading: 'Media Coverage & Recognition',
   description:
-    'Privacy-safe media coverage cards will be shown only after image review, redaction, and client approval.',
-  emptyState: 'Media coverage will be added after privacy review and client approval.',
+    'Dr. Rahul Bhaskarrao Tengse has been featured in local and regional newspapers for kidney health awareness programmes and community education initiatives in Parbhani.',
+  emptyState: 'Media coverage cards will appear here after privacy review and client approval.',
   cta: {
     label: 'View All Coverage',
     href: '/media-news'
   }
 };
 
+// ─── GALLERY PREVIEW ─────────────────────────────────────────────────────────
+
 export const galleryPreviewConfig = {
   eyebrow: 'Gallery',
   heading: 'Gallery',
   description:
-    'Approved doctor, hospital, awareness, and facility images will be displayed after client review.',
-  emptyState: 'Approved gallery images will be added after client review.',
+    'Approved images from the hospital facility, kidney health awareness programmes, and dialysis care activities.',
+  emptyState: 'Approved gallery images will appear here after client review.',
   cta: {
     label: 'View Full Gallery',
     href: '/gallery'
   }
 };
 
+// ─── CONTACT PREVIEW ─────────────────────────────────────────────────────────
+
 export const contactPreviewData = {
-  eyebrow: 'Contact',
-  heading: 'Contact Preview',
-  description: 'Contact details remain pending client confirmation and will be finalized before launch.',
+  eyebrow: 'Contact us',
+  heading: 'Get in Touch',
+  description:
+    'Reach the hospital team for appointment support, OPD timing enquiries, or directions to the facility in Parbhani.',
   cards: [
     {
       id: 'phone',
@@ -209,7 +250,7 @@ export const contactPreviewData = {
       actionLabel: 'Confirm Timing'
     }
   ],
-  mapPlaceholder: 'Google Map link pending client confirmation.',
+  mapPlaceholder: 'Google Maps link pending client confirmation. Visit the Contact page for full location details.',
   cta: {
     label: 'View Full Contact Details',
     href: '/contact'

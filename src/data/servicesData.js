@@ -1,8 +1,17 @@
+/**
+ * servicesData.js — Kidney care service card definitions
+ *
+ * Batch 3 — Clinical Content Refresh
+ * Updated: Improved all 16 service descriptions with patient-friendly, medically accurate,
+ *          SEO-optimised, and educationally appropriate wording.
+ * Single source of truth imported by Services page and Homepage services preview.
+ */
 export const servicesData = [
   {
     id: 'kidney-disease-consultation',
     name: 'Kidney Disease Consultation',
-    shortDescription: 'Consultation for kidney symptoms, abnormal reports, and kidney health guidance.',
+    shortDescription:
+      'Specialist consultation for kidney symptoms, abnormal creatinine or urine reports, and kidney function assessment. Suitable for new concerns and ongoing kidney disease follow-up.',
     icon: 'Stethoscope',
     ctaText: 'Book Consultation',
     href: '/appointment',
@@ -12,7 +21,8 @@ export const servicesData = [
   {
     id: 'dialysis-care',
     name: 'Dialysis Care',
-    shortDescription: 'Guidance for patients who may require or are already undergoing dialysis.',
+    shortDescription:
+      'Guidance and consultation support for patients who may need dialysis or are already on dialysis therapy. Includes haemodialysis, SLED, and peritoneal dialysis-related awareness.',
     icon: 'Activity',
     ctaText: 'Request Dialysis Consultation',
     href: '/dialysis-care',
@@ -22,7 +32,8 @@ export const servicesData = [
   {
     id: 'sled-dialysis',
     name: 'SLED Dialysis',
-    shortDescription: 'Guidance for SLED dialysis support where clinically advised.',
+    shortDescription:
+      'Sustained Low-Efficiency Dialysis (SLED) may be recommended in critical or hospital-based settings. Consultation and guidance are available where clinically appropriate.',
     icon: 'HeartPulse',
     ctaText: 'Consult Now',
     href: '/appointment',
@@ -32,7 +43,8 @@ export const servicesData = [
   {
     id: 'peritoneal-dialysis-guidance',
     name: 'Peritoneal Dialysis Guidance',
-    shortDescription: 'Guidance for patients and families considering or managing peritoneal dialysis.',
+    shortDescription:
+      'Peritoneal dialysis uses the body\'s own membrane for filtration. Guidance for patients and families exploring this dialysis option, including care planning and eligibility discussion.',
     icon: 'Droplet',
     ctaText: 'Consult Now',
     href: '/appointment',
@@ -42,7 +54,8 @@ export const servicesData = [
   {
     id: 'hcv-hbsag-dialysis-support',
     name: 'HCV / HbsAg Dialysis Support',
-    shortDescription: 'Dialysis-related guidance for infection-control-based support.',
+    shortDescription:
+      'Specialised dialysis guidance for patients with Hepatitis C (HCV) or Hepatitis B (HbsAg) infection. Safe dialysis support follows strict infection-control protocols.',
     icon: 'ShieldCheck',
     ctaText: 'Request Guidance',
     href: '/appointment',
@@ -52,7 +65,8 @@ export const servicesData = [
   {
     id: 'av-fistula-care',
     name: 'AV Fistula Care',
-    shortDescription: 'Awareness and guidance for AV Fistula care related to dialysis access.',
+    shortDescription:
+      'Arteriovenous (AV) Fistula is the preferred long-term dialysis access for suitable patients. Consultation covers fistula awareness, care, and when to seek specialist review.',
     icon: 'Activity',
     ctaText: 'Learn More',
     href: '/dialysis-care',
@@ -62,7 +76,8 @@ export const servicesData = [
   {
     id: 'permcath-procedure-guidance',
     name: 'Permcath Procedure Guidance',
-    shortDescription: 'Awareness related to Permcath use, care, and access planning.',
+    shortDescription:
+      'A Permcath is a tunnelled catheter used for dialysis access when an AV Fistula is not yet ready or suitable. Guidance covers its use, care, and transition planning.',
     icon: 'FileText',
     ctaText: 'Consult Now',
     href: '/appointment',
@@ -72,7 +87,8 @@ export const servicesData = [
   {
     id: 'kidney-biopsy',
     name: 'Kidney Biopsy',
-    shortDescription: 'Guidance for patients who may need kidney biopsy evaluation.',
+    shortDescription:
+      'A kidney biopsy provides tissue-level diagnosis for conditions like glomerulonephritis and nephrotic syndrome. Consultation includes indication assessment, preparation guidance, and result interpretation.',
     icon: 'FileText',
     ctaText: 'Book Consultation',
     href: '/appointment',
@@ -82,7 +98,8 @@ export const servicesData = [
   {
     id: 'plasma-pheresis',
     name: 'Plasma Pheresis',
-    shortDescription: 'Specialized care guidance where plasma pheresis may be considered.',
+    shortDescription:
+      'Plasmapheresis may be considered for specific autoimmune kidney conditions. Specialist consultation will assess clinical suitability and discuss the role of this therapy in overall care.',
     icon: 'Droplet',
     ctaText: 'Consult Now',
     href: '/appointment',
@@ -92,7 +109,8 @@ export const servicesData = [
   {
     id: 'nephrotic-syndrome-treatment',
     name: 'Nephrotic Syndrome Treatment',
-    shortDescription: 'Consultation and long-term management guidance for nephrotic syndrome.',
+    shortDescription:
+      'Nephrotic syndrome causes significant protein loss in urine and requires specialist evaluation. Consultation covers diagnosis, management guidance, and long-term monitoring planning.',
     icon: 'ShieldCheck',
     ctaText: 'Book Consultation',
     href: '/appointment',
@@ -102,7 +120,8 @@ export const servicesData = [
   {
     id: 'kidney-transplant-guidance',
     name: 'Kidney Transplant Guidance',
-    shortDescription: 'Evaluation, donor-related discussion, and follow-up awareness.',
+    shortDescription:
+      'Guidance for patients exploring kidney transplantation — covering pre-transplant evaluation awareness, donor discussion, and post-transplant follow-up support. Not a guarantee of approval or outcome.',
     icon: 'Hospital',
     ctaText: 'Consult for Transplant Guidance',
     href: '/kidney-transplant-guidance',
@@ -111,8 +130,9 @@ export const servicesData = [
   },
   {
     id: 'diabetic-kidney-disease-care',
-    name: 'Diabetic Kidney Disease Care',
-    shortDescription: 'Kidney guidance for patients with diabetes-related kidney concerns.',
+    name: 'Diabetic Kidney Disease',
+    shortDescription:
+      'Diabetic nephropathy is a leading cause of chronic kidney disease. Early specialist monitoring, report review, and targeted guidance can help slow progression in diabetic patients.',
     icon: 'HeartPulse',
     ctaText: 'Book Consultation',
     href: '/appointment',
@@ -122,7 +142,8 @@ export const servicesData = [
   {
     id: 'high-bp-related-kidney-disease',
     name: 'High BP-related Kidney Disease',
-    shortDescription: 'Consultation for blood-pressure-related kidney risks and monitoring.',
+    shortDescription:
+      'Uncontrolled hypertension is a major contributor to kidney damage. Specialist consultation for blood-pressure-related kidney concerns, monitoring, and protective care planning.',
     icon: 'Activity',
     ctaText: 'Get Kidney Care Guidance',
     href: '/appointment',
@@ -131,8 +152,9 @@ export const servicesData = [
   },
   {
     id: 'kidney-related-anemia',
-    name: 'Kidney-related Anemia',
-    shortDescription: 'Evaluation guidance for low hemoglobin concerns related to kidney disease.',
+    name: 'Kidney-related Anaemia',
+    shortDescription:
+      'Reduced kidney function can cause anaemia due to decreased erythropoietin production. Evaluation and guidance for patients with low haemoglobin linked to kidney disease.',
     icon: 'Droplet',
     ctaText: 'Consult Now',
     href: '/appointment',
@@ -141,8 +163,9 @@ export const servicesData = [
   },
   {
     id: 'electrolyte-management',
-    name: 'Electrolyte Management',
-    shortDescription: 'Consultation for electrolyte imbalance and blood pressure concerns.',
+    name: 'Electrolyte & Fluid Management',
+    shortDescription:
+      'Imbalances in sodium, potassium, and bicarbonate are common in kidney disease. Specialist consultation for evaluation, monitoring, and guidance on electrolyte-related concerns.',
     icon: 'Activity',
     ctaText: 'Book Consultation',
     href: '/appointment',
@@ -152,7 +175,8 @@ export const servicesData = [
   {
     id: 'report-review-second-opinion',
     name: 'Report Review / Second Opinion',
-    shortDescription: 'Review of kidney reports, dialysis records, and previous results.',
+    shortDescription:
+      'Structured review of kidney function reports (creatinine, eGFR, urine protein), dialysis records, imaging, and previous specialist notes — helping patients understand their kidney health clearly.',
     icon: 'FileText',
     ctaText: 'Request Report Review',
     href: '/appointment',

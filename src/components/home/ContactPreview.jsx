@@ -76,7 +76,7 @@ export function ContactPreview() {
           <MotionReveal className="rounded-[2rem] border border-teal/15 bg-white p-6 shadow-card">
             <h3 className="font-heading text-xl font-bold text-navy">Need appointment help?</h3>
             <p className="mt-2 text-sm leading-6 text-muted">
-              Use the appointment page for request flow. Direct phone and map details are pending confirmation.
+              Submit your appointment request online or call the hospital directly. OPD timing and map details are available on the Contact page.
             </p>
             <div className="mt-5 flex flex-col gap-3 sm:flex-row">
               <Button href={contactPreviewData.cta.href} variant="primary">

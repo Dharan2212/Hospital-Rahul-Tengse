@@ -1,70 +1,146 @@
+/**
+ * dialysisData.js — Dialysis Care page content
+ *
+ * Batch 3 — Clinical Content Refresh
+ * Updated: Richer educational content, patient-friendly explanations, emotionally
+ *          supportive tone, clinically accurate descriptions, improved SEO structure.
+ * All content is educational. Personalised dialysis guidance requires direct consultation.
+ */
 export const dialysisData = {
   hero: {
     eyebrow: 'Dialysis care guidance',
     title: 'Dialysis Care — Patient Guidance & Support',
     description:
-      'General awareness and consultation support for patients who may require dialysis or are already undergoing dialysis care.',
+      'Clear, supportive information for patients and families exploring dialysis — what it is, when it may be needed, and what to expect during the journey.',
     primaryCTA: { label: 'Request Dialysis Consultation', href: '/appointment', variant: 'primary' }
   },
+
   whatIsDialysis: {
-    heading: 'What is dialysis?',
+    heading: 'Understanding dialysis',
     text:
-      'Dialysis is a medical support process that may be advised when the kidneys are not able to adequately remove waste and extra fluid from the body. The need, type, and timing of dialysis depend on medical evaluation and doctor guidance.'
+      'Dialysis is a kidney support therapy that helps remove waste products, excess fluids, and toxins from the blood when the kidneys are no longer able to do this adequately on their own. It does not cure kidney disease — rather, it provides an essential life-supporting function while other treatment options are evaluated. The type of dialysis recommended, the timing, and the schedule all depend on careful medical evaluation by a kidney specialist.'
   },
+
   whenNeeded: [
-    { title: 'CKD Stage 5', description: 'Advanced kidney disease may require dialysis evaluation based on symptoms, reports, and doctor assessment.', icon: 'FileText' },
-    { title: 'Acute Kidney Injury', description: 'Some sudden kidney problems may require close monitoring and hospital-based care.', icon: 'Activity' },
-    { title: 'Fluid Overload', description: 'Fluid-related symptoms may need specialist evaluation, especially in kidney disease.', icon: 'Droplet' },
-    { title: 'Doctor-recommended Support', description: 'Dialysis decisions must be made after personalized medical consultation.', icon: 'ShieldCheck' }
+    {
+      title: 'Advanced CKD (Stage 4–5)',
+      description: 'When kidney function falls significantly, a nephrologist will evaluate whether dialysis initiation is required based on symptoms, lab reports, and overall condition.',
+      icon: 'FileText'
+    },
+    {
+      title: 'Acute Kidney Injury (AKI)',
+      description: 'In sudden or severe kidney injury, urgent hospital-based dialysis support may be advised as part of critical care management.',
+      icon: 'Activity'
+    },
+    {
+      title: 'Dangerous Fluid Accumulation',
+      description: 'Fluid overload causing breathlessness, pulmonary oedema, or uncontrolled blood pressure may require emergency dialysis evaluation.',
+      icon: 'Droplet'
+    },
+    {
+      title: 'Electrolyte Emergencies',
+      description: 'Dangerously elevated potassium (hyperkalaemia) or acid-base disturbances may require urgent dialysis support to protect heart and organ function.',
+      icon: 'HeartPulse'
+    },
+    {
+      title: 'Toxin Removal Support',
+      description: 'In certain poisonings or medication toxicities, dialysis may be used as part of an intensive care management plan.',
+      icon: 'ShieldCheck'
+    },
+    {
+      title: 'Doctor-guided Decision',
+      description: 'Dialysis initiation must be guided by a nephrologist based on complete medical assessment. No single report or symptom alone determines this decision.',
+      icon: 'Stethoscope'
+    }
   ],
+
   guidanceSections: [
     {
-      id: 'sled',
-      title: 'SLED Dialysis Guidance',
+      id: 'haemodialysis',
+      title: 'Haemodialysis',
       icon: 'Activity',
       description:
-        'SLED dialysis guidance may be discussed when clinically advised in a hospital setting. Patients and families should consult the doctor for personalized recommendations.',
-      disclaimer: 'This section is for awareness only and does not replace medical decision-making.'
+        'Haemodialysis is the most common form of dialysis. Blood is circulated through an external dialysis machine that filters waste and excess fluid, then returned to the body. Sessions are typically scheduled 3 times per week for 3–4 hours each, though frequency depends on the clinical situation.',
+      disclaimer: 'Session frequency, duration, and access type must be personalised through doctor consultation.'
+    },
+    {
+      id: 'sled',
+      title: 'SLED Dialysis',
+      icon: 'HeartPulse',
+      description:
+        'Sustained Low-Efficiency Dialysis (SLED) is a gentler, extended form of dialysis used mainly in critically ill or haemodynamically unstable patients. It runs over a longer period at lower intensity, making it suitable for patients who cannot tolerate standard haemodialysis sessions.',
+      disclaimer: 'SLED is a hospital-based therapy. Clinical suitability is assessed by the treating nephrologist and intensive care team.'
     },
     {
       id: 'peritoneal',
-      title: 'Peritoneal Dialysis',
+      title: 'Peritoneal Dialysis (PD)',
       icon: 'Droplet',
       description:
-        'Peritoneal dialysis may be discussed with patients and families where suitable. Eligibility and care planning require specialist evaluation.',
-      disclaimer: 'This is general guidance and not an instruction guide.'
+        'In peritoneal dialysis, the lining of the abdomen (peritoneum) acts as a natural filter. A special solution is introduced through a catheter, left for a period to absorb waste, and then drained. PD can often be performed at home, offering more flexibility for suitable patients. CAPD (Continuous Ambulatory Peritoneal Dialysis) is one of the most common forms.',
+      disclaimer: 'Peritoneal dialysis eligibility and care planning require detailed specialist evaluation and patient training.'
     },
     {
       id: 'hcv-hbsag',
       title: 'HCV / HbsAg Dialysis Support',
       icon: 'ShieldCheck',
       description:
-        'Dialysis-related guidance for infection-control-based support may be required for some patients. Hospital protocol and doctor consultation are essential.',
-      disclaimer: 'Infection-control decisions must follow hospital protocol and medical advice.'
+        'Patients with Hepatitis C (HCV) or Hepatitis B (HbsAg) infection require specialised dialysis settings with strict infection-control protocols. Safe and effective dialysis is possible with appropriate precautions, separate equipment management, and regular monitoring under specialist care.',
+      disclaimer: 'Infection-control procedures follow hospital protocol. Confirm availability and requirements with the hospital team.'
     }
   ],
+
   accessAwareness: [
     {
-      title: 'AV Fistula Awareness',
+      title: 'AV Fistula',
       icon: 'Activity',
       description:
-        'An AV Fistula is commonly discussed as dialysis access for suitable patients. Its planning, care, and suitability must be guided by medical professionals.'
+        'An Arteriovenous (AV) Fistula is created surgically by connecting an artery to a vein — usually in the forearm — to create a durable, high-flow access site for regular haemodialysis. It is the preferred access option for long-term dialysis patients because of its durability and lower infection risk. Planning should begin well before dialysis is anticipated.',
+      image: 'av-fistula'
     },
     {
-      title: 'Permcath Awareness',
+      title: 'Permcath (Tunnelled Catheter)',
       icon: 'FileText',
       description:
-        'Permcath may be discussed as temporary or planned dialysis access in selected situations. This page does not provide procedure instructions.'
+        'A Permcath is a tunnelled central venous catheter inserted under the skin and used for dialysis access when an AV Fistula is not yet ready, not suitable, or needs time to mature. It offers relatively quick access but carries a higher infection risk than a fistula over the long term. Transition from Permcath to AV Fistula is recommended when clinically appropriate.',
+      image: 'permcath'
     }
   ],
+
   safetyNotes: [
-    'Consult the doctor for personalized dialysis guidance.',
-    'Do not change dialysis schedule, medicines, or fluid guidance without medical advice.',
-    'Bring dialysis records, reports, medicines, and previous prescriptions for consultation.'
+    'Always consult the nephrologist before making any changes to your dialysis schedule, fluid intake, or medicines.',
+    'Bring all dialysis records, machine reports, recent blood tests, and medicine lists to every consultation.',
+    'Report any changes in swelling, breathlessness, weight gain, blood pressure, or general wellbeing to the dialysis team promptly.',
+    'Attend scheduled dialysis sessions as advised — skipping or shortening sessions can cause serious complications.',
+    'Diet, fluid intake, and potassium control are critical in dialysis. Ask for a dietitian referral from your specialist.'
   ],
+
+  lifestylePoints: [
+    {
+      title: 'Fluid Management',
+      description: 'Fluid intake restriction is often required. The amount you can drink daily depends on your urine output and is set by your specialist.',
+      icon: 'Droplet'
+    },
+    {
+      title: 'Diet in Dialysis',
+      description: 'Potassium, phosphorus, and sodium need to be carefully managed. A kidney-specific diet plan should be discussed with your doctor or dietitian.',
+      icon: 'Heart'
+    },
+    {
+      title: 'Medicine Compliance',
+      description: 'Phosphate binders, blood pressure medicines, and erythropoietin injections are commonly used. Take all medicines as prescribed.',
+      icon: 'ShieldCheck'
+    },
+    {
+      title: 'Access Care',
+      description: 'Keep your AV Fistula or Permcath site clean and protected. Report any redness, swelling, discharge, or pain immediately.',
+      icon: 'Activity'
+    }
+  ],
+
   cta: {
-    heading: 'Request Dialysis Consultation',
-    description: 'Share your dialysis-related questions through the appointment request page. The team will contact you for confirmation.',
+    heading: 'Request a Dialysis Consultation',
+    description:
+      'Have questions about dialysis, access options, or an ongoing dialysis care plan? Submit your appointment request and our team will contact you to confirm.',
     primaryCTA: { label: 'Request Dialysis Consultation', href: '/appointment', variant: 'secondary' }
   }
 };
